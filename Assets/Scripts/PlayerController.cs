@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public float HorizontalAxis; 
     public bool JumpRequested = false;
     public bool IsGrounded = false;
+
+    public bool LeftBlocking = false;
+    public bool RightBlocking = false;
     public int AirJumpUsed = 0;
 
     private new Rigidbody2D rigidbody2D;
@@ -43,7 +46,10 @@ public class PlayerController : MonoBehaviour
         detectGround();
 
         float deltaX = HorizontalAxis * Speed * Time.fixedDeltaTime;
-        rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+        if (IsGrounded || (deltaX > 0 && !RightBlocking) || (deltaX < 0 && !LeftBlocking))
+        {
+            rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+        }
 
         if (Mathf.Abs(deltaX) > 0.01f)
         {
@@ -70,6 +76,8 @@ public class PlayerController : MonoBehaviour
     private void detectGround()
     {
         IsGrounded = false; 
+        LeftBlocking = false;
+        RightBlocking = false;
 
         const float epsilon = 0.1f;
         Vector2 min = collider2D.bounds.min;
@@ -87,16 +95,25 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(point.ToVector3(), dir.ToVector3() * 1, Color.yellow);
 
             float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            Debug.Log(dir);
             Debug.Log(rotation);
-            if ((90 - Mathf.Abs(rotation)) < MaxFloorAngle)
+            if (Mathf.Abs(90 - rotation) < MaxFloorAngle)
             {
                 IsGrounded = true;
                 AirJumpUsed = 0;
-
                 if (Mathf.Abs(HorizontalAxis) > 0)
                 {
                     rigidbody2D.rotation = rotation - 90;
+                }
+            }
+            else 
+            {
+                if (dir.x > 0) 
+                {
+                    LeftBlocking = true;
+                }
+                else if (dir.x < 0)
+                {
+                    RightBlocking = true;
                 }
             }
         } 
