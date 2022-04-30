@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float JumpForce = 10.0f;
     public float AirJumpForce = 5.0f;
     public int MaxAirJump = 1;
+    [Range(0, 90)]
+    public float MaxFloorAngle = 45;
 
     [Header("Public for Debug")]
     public float HorizontalAxis; 
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private new Rigidbody2D rigidbody2D;
     private new Collider2D collider2D;
     private float gravityScale;
+    private ContactPoint2D[] contactPointsBuffer = new ContactPoint2D[8];
     
     void Start()
     {
@@ -66,6 +69,8 @@ public class PlayerController : MonoBehaviour
 
     private void detectGround()
     {
+        IsGrounded = false; 
+
         const float epsilon = 0.1f;
         Vector2 min = collider2D.bounds.min;
         Vector2 max = collider2D.bounds.max;
@@ -73,23 +78,25 @@ public class PlayerController : MonoBehaviour
         Vector2 corner2 = new Vector2(max.x, min.y - epsilon * 2);
         var hit = Physics2D.OverlapArea(corner1, corner2);
 
-        bool prevGrounded = IsGrounded;
-        IsGrounded = (hit != null);
-        
-        if (IsGrounded)
+        if (hit != null)
         {
-            AirJumpUsed = 0;
+            hit.GetContacts(contactPointsBuffer);
+            Vector2 point = contactPointsBuffer[0].point;
+            Vector2 dir = -contactPointsBuffer[0].normal;
 
-            if (Mathf.Abs(HorizontalAxis) > 0)
+            Debug.DrawRay(point.ToVector3(), dir.ToVector3() * 1, Color.yellow);
+
+            float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            Debug.Log(dir);
+            Debug.Log(rotation);
+            if ((90 - Mathf.Abs(rotation)) < MaxFloorAngle)
             {
-                ContactPoint2D[] contacts = new ContactPoint2D[2];
+                IsGrounded = true;
+                AirJumpUsed = 0;
 
-                int nContacts = hit.GetContacts(contacts);
-                if (nContacts >= 1)
+                if (Mathf.Abs(HorizontalAxis) > 0)
                 {
-                    var dir = contacts[0].normal;
-                    float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
-                    rigidbody2D.rotation = rotation;
+                    rigidbody2D.rotation = rotation - 90;
                 }
             }
         } 
