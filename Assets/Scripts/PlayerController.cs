@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     public float Speed = 50.0f;
     public float JumpForce = 10.0f;
     public float AirJumpForce = 5.0f;
-
     public int MaxAirJump = 1;
 
     [Header("Public for Debug")]
@@ -43,6 +42,11 @@ public class PlayerController : MonoBehaviour
         float deltaX = HorizontalAxis * Speed * Time.fixedDeltaTime;
         rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
 
+        if (Mathf.Abs(deltaX) > 0.01f)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(deltaX), 1, 1);
+        }
+
         if (JumpRequested)
         {
             if (IsGrounded)
@@ -69,11 +73,25 @@ public class PlayerController : MonoBehaviour
         Vector2 corner2 = new Vector2(max.x, min.y - epsilon * 2);
         var hit = Physics2D.OverlapArea(corner1, corner2);
 
+        bool prevGrounded = IsGrounded;
         IsGrounded = (hit != null);
         
         if (IsGrounded)
         {
             AirJumpUsed = 0;
-        }
+
+            if (Mathf.Abs(HorizontalAxis) > 0)
+            {
+                ContactPoint2D[] contacts = new ContactPoint2D[2];
+
+                int nContacts = hit.GetContacts(contacts);
+                if (nContacts >= 1)
+                {
+                    var dir = contacts[0].normal;
+                    float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
+                    rigidbody2D.rotation = rotation;
+                }
+            }
+        } 
     }
 }
