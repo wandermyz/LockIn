@@ -103,9 +103,14 @@ MonoBehaviour:
   JumpForce: 12
   AirJumpForce: 10
   MaxAirJump: 1
+  MaxFloorAngle: 45
+  DeathY: -18
+  RespawnY: -50
   HorizontalAxis: 0
   JumpRequested: 0
   IsGrounded: 0
+  LeftBlocking: 0
+  RightBlocking: 0
   AirJumpUsed: 0
 --- !u!50 &273272606719072430
 Rigidbody2D:

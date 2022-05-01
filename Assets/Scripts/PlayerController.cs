@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     [Range(0, 90)]
     public float MaxFloorAngle = 45;
 
+    public float DeathY;
+    public float RespawnY;
+
     [Header("Public for Debug")]
     public float HorizontalAxis; 
     public bool JumpRequested = false;
@@ -24,9 +27,13 @@ public class PlayerController : MonoBehaviour
     private new Collider2D collider2D;
     private float gravityScale;
     private ContactPoint2D[] contactPointsBuffer = new ContactPoint2D[8];
+
+    private Vector3 spawningPosition;
     
     void Start()
     {
+        spawningPosition = transform.position;
+
         rigidbody2D = GetComponent<Rigidbody2D>();
         collider2D = GetComponent<Collider2D>();
     }
@@ -39,12 +46,19 @@ public class PlayerController : MonoBehaviour
         {
             JumpRequested = true;
         }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Fire");
+        }
     }
 
     void FixedUpdate()
     {
+        // Ground Detection
         detectGround();
 
+        // Movement
         float deltaX = HorizontalAxis * Speed * Time.fixedDeltaTime;
         if (IsGrounded || (deltaX > 0 && !RightBlocking) || (deltaX < 0 && !LeftBlocking))
         {
@@ -56,6 +70,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Sign(deltaX), 1, 1);
         }
 
+        // Jump
         if (JumpRequested)
         {
             if (IsGrounded)
@@ -70,6 +85,15 @@ public class PlayerController : MonoBehaviour
             }
 
             JumpRequested = false;
+        }
+
+        // Death
+        if (transform.position.y < RespawnY) 
+        {
+            rigidbody2D.MovePosition(spawningPosition);
+            rigidbody2D.rotation = 0;
+            rigidbody2D.velocity = Vector2.zero;
+            rigidbody2D.angularVelocity = 0;
         }
     }
 
@@ -95,7 +119,6 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(point.ToVector3(), dir.ToVector3() * 1, Color.yellow);
 
             float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            Debug.Log(rotation);
             if (Mathf.Abs(90 - rotation) < MaxFloorAngle)
             {
                 IsGrounded = true;
