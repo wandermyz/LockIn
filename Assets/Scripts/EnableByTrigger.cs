@@ -14,7 +14,6 @@ public class EnableByTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("ONTrigger");
         if (other.tag != "Player") {
             return;
         }
