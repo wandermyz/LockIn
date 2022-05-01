@@ -87,13 +87,15 @@ public class PlayerController : MonoBehaviour
             JumpRequested = false;
         }
 
-        // Death
+        // Drop
         if (transform.position.y < RespawnY) 
         {
             rigidbody2D.MovePosition(spawningPosition);
             rigidbody2D.rotation = 0;
             rigidbody2D.velocity = Vector2.zero;
             rigidbody2D.angularVelocity = 0;
+
+            ++GameManager.Instance.DropCount;
         }
     }
 
@@ -112,11 +114,15 @@ public class PlayerController : MonoBehaviour
 
         if (hit != null)
         {
-            hit.GetContacts(contactPointsBuffer);
+            int nContacts = hit.GetContacts(contactPointsBuffer);
             Vector2 point = contactPointsBuffer[0].point;
             Vector2 dir = -contactPointsBuffer[0].normal;
 
             Debug.DrawRay(point.ToVector3(), dir.ToVector3() * 1, Color.yellow);
+            if (nContacts >= 2)
+            {
+                Debug.DrawRay(contactPointsBuffer[1].point.ToVector3(), -contactPointsBuffer[1].normal.ToVector3() * 1, Color.grey);
+            }
 
             float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             if (Mathf.Abs(90 - rotation) < MaxFloorAngle)
