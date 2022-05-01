@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\LockIn\LockIn\LockIn_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\LockIn\LockIn\LockIn_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\LockIn\LockIn\LockIn_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3017428748" Language="SFX" Hash="1218410911">
+			<ObjectPath>\SoundBanks\Default Work Unit\MusicBank</ObjectPath>
+			<ShortName>MusicBank</ShortName>
+			<Path>MusicBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4246944747" Language="SFX" Hash="1658919392">
+			<ObjectPath>\SoundBanks\Default Work Unit\AudioBank</ObjectPath>
+			<ShortName>AudioBank</ShortName>
+			<Path>AudioBank.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
