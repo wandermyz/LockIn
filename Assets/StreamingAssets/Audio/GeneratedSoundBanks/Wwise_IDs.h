@@ -11,11 +11,15 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_20220425 = 2325257487U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID AUDIOBANK = 4246944747U;
-        static const AkUniqueID MUSICBANK = 3017428748U;
+        static const AkUniqueID MAINBANK = 2880737896U;
     } // namespace BANKS
 
     namespace BUSSES

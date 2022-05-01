@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2325257487	Play_20220425			\Default Work Unit\Play_20220425	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	931469203	20220425	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\Voices\English(US)\20220425_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\20220425\20220425		48505700
+

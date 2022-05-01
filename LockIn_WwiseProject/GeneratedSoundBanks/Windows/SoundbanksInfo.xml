@@ -16,15 +16,26 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3017428748" Language="SFX" Hash="1218410911">
-			<ObjectPath>\SoundBanks\Default Work Unit\MusicBank</ObjectPath>
-			<ShortName>MusicBank</ShortName>
-			<Path>MusicBank.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="4246944747" Language="SFX" Hash="1658919392">
-			<ObjectPath>\SoundBanks\Default Work Unit\AudioBank</ObjectPath>
-			<ShortName>AudioBank</ShortName>
-			<Path>AudioBank.bnk</Path>
+		<SoundBank Id="2880737896" Language="SFX" Hash="3148118713">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
+			<ShortName>MainBank</ShortName>
+			<Path>MainBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2325257487" Name="Play_20220425" ObjectPath="\Events\Default Work Unit\Play_20220425" DurationType="OneShot" DurationMin="252.633102" DurationMax="252.633102">
+					<IncludedMemoryFiles>
+						<File Id="931469203" Language="SFX">
+							<ShortName>20220425.wav</ShortName>
+							<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="931469203" Language="SFX">
+					<ShortName>20220425.wav</ShortName>
+					<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

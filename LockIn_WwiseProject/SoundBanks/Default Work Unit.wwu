@@ -3,13 +3,12 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{0AE2AAC8-0C7C-4616-BA5F-A18A853CD31A}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="MusicBank" ID="{95DD9502-0649-4791-93B9-3CD3C54B79D9}">
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="AudioBank" ID="{BECC7BCA-885B-49E9-B763-A38CBDE1C3ED}">
-					<ObjectInclusionList/>
+				<SoundBank Name="MainBank" ID="{323C7E3E-FEF7-4892-8882-459AA02573AD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{E42B1FF0-2987-4422-A660-82C9665591E9}" WorkUnitID="{E42B1FF0-2987-4422-A660-82C9665591E9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{3119519D-93ED-48FC-BE60-8B47D7906B53}" WorkUnitID="{3119519D-93ED-48FC-BE60-8B47D7906B53}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{042EF5B7-6957-4A8C-A8EB-1A802CEB8C63}" WorkUnitID="{042EF5B7-6957-4A8C-A8EB-1A802CEB8C63}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
