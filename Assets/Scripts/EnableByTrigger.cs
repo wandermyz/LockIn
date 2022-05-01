@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnableByTrigger : MonoBehaviour
 {
     public int RequiredCount = 1; 
+    public bool Repeatable = false;
     public GameObject[] Enables;
 
     [Header("Debug")]
@@ -25,6 +26,11 @@ public class EnableByTrigger : MonoBehaviour
             foreach (GameObject go in Enables)
             {
                 go.SetActive(true);
+            }
+
+            if (!Repeatable)
+            {
+                gameObject.SetActive(false);
             }
         }
     }
