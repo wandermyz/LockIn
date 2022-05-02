@@ -11,31 +11,142 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1450746950">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="3148118713">
+		<SoundBank Id="2880737896" Language="SFX" Hash="4005536601">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2325257487" Name="Play_20220425" ObjectPath="\Events\Default Work Unit\Play_20220425" DurationType="OneShot" DurationMin="252.633102" DurationMax="252.633102">
+				<Event Id="1691765453" Name="Play_MainBGM" ObjectPath="\Events\Default Work Unit\Play_MainBGM" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="146331676" Language="SFX">
+							<ShortName>20220501-3 - 0003 - Instrument - Key.wav</ShortName>
+							<Path>SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem</Path>
+						</File>
+						<File Id="170253037" Language="SFX">
+							<ShortName>20220501-2-03-Heavy Shaker.wav</ShortName>
+							<Path>SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem</Path>
+						</File>
+						<File Id="190825172" Language="SFX">
+							<ShortName>20220426-03-Pots and Pans.wav</ShortName>
+							<Path>SFX\20220426-03-Pots and Pans_D79FB2B7.wem</Path>
+						</File>
+						<File Id="198198537" Language="SFX">
+							<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
+							<Path>SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem</Path>
+						</File>
+						<File Id="336354772" Language="SFX">
+							<ShortName>20220501-3 - 0001 - Instrument - All is Lost.wav</ShortName>
+							<Path>SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem</Path>
+						</File>
+						<File Id="709305570" Language="SFX">
+							<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
+							<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+						</File>
+						<File Id="826579402" Language="SFX">
+							<ShortName>20220501-2-01-Steinway Grand Piano.wav</ShortName>
+							<Path>SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem</Path>
+						</File>
+						<File Id="865444543" Language="SFX">
+							<ShortName>20220501-3 - 0002 - Instrument - Tremble.wav</ShortName>
+							<Path>SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem</Path>
+						</File>
 						<File Id="931469203" Language="SFX">
 							<ShortName>20220425.wav</ShortName>
 							<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
 						</File>
+						<File Id="982253332" Language="SFX">
+							<ShortName>20220426-02-Odd Key.wav</ShortName>
+							<Path>SFX\20220426-02-Odd Key_D79FB2B7.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{31A346F0-E1D2-4FA7-82A2-C41BF9E419D0}">
+							<Media>
+								<File Id="931469203"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1B1E1FF0-9237-4126-AC0E-0B669B255384}">
+							<Media>
+								<File Id="190825172"/>
+								<File Id="709305570"/>
+								<File Id="982253332"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3B490DB1-0246-41CA-B06C-70825CF11F6E}">
+							<Media>
+								<File Id="146331676"/>
+								<File Id="336354772"/>
+								<File Id="865444543"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}">
+							<Media>
+								<File Id="170253037"/>
+								<File Id="198198537"/>
+								<File Id="826579402"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="146331676" Language="SFX">
+					<ShortName>20220501-3 - 0003 - Instrument - Key.wav</ShortName>
+					<Path>SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem</Path>
+				</File>
+				<File Id="170253037" Language="SFX">
+					<ShortName>20220501-2-03-Heavy Shaker.wav</ShortName>
+					<Path>SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem</Path>
+				</File>
+				<File Id="190825172" Language="SFX">
+					<ShortName>20220426-03-Pots and Pans.wav</ShortName>
+					<Path>SFX\20220426-03-Pots and Pans_D79FB2B7.wem</Path>
+				</File>
+				<File Id="198198537" Language="SFX">
+					<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
+					<Path>SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem</Path>
+				</File>
+				<File Id="336354772" Language="SFX">
+					<ShortName>20220501-3 - 0001 - Instrument - All is Lost.wav</ShortName>
+					<Path>SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem</Path>
+				</File>
+				<File Id="709305570" Language="SFX">
+					<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
+					<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+				</File>
+				<File Id="826579402" Language="SFX">
+					<ShortName>20220501-2-01-Steinway Grand Piano.wav</ShortName>
+					<Path>SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem</Path>
+				</File>
+				<File Id="865444543" Language="SFX">
+					<ShortName>20220501-3 - 0002 - Instrument - Tremble.wav</ShortName>
+					<Path>SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem</Path>
+				</File>
 				<File Id="931469203" Language="SFX">
 					<ShortName>20220425.wav</ShortName>
 					<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
 				</File>
+				<File Id="982253332" Language="SFX">
+					<ShortName>20220426-02-Odd Key.wav</ShortName>
+					<Path>SFX\20220426-02-Odd Key_D79FB2B7.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="1315568674" Name="LevelGroup" ObjectPath="\States\Default Work Unit\LevelGroup" GUID="{9CCC351A-9C0C-488C-B67F-34350A03DE2E}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\LevelGroup\None" GUID="{D6D1C914-55C1-4335-AA0D-51543B38BB84}"/>
+						<State Id="1241384302" Name="L1_Help" ObjectPath="\States\Default Work Unit\LevelGroup\L1_Help" GUID="{31A346F0-E1D2-4FA7-82A2-C41BF9E419D0}"/>
+						<State Id="3534658058" Name="L2_RainingBread" ObjectPath="\States\Default Work Unit\LevelGroup\L2_RainingBread" GUID="{1B1E1FF0-9237-4126-AC0E-0B669B255384}"/>
+						<State Id="2711863090" Name="L3_Falling" ObjectPath="\States\Default Work Unit\LevelGroup\L3_Falling" GUID="{3B490DB1-0246-41CA-B06C-70825CF11F6E}"/>
+						<State Id="2259867596" Name="L4_WeepingPotatoes" ObjectPath="\States\Default Work Unit\LevelGroup\L4_WeepingPotatoes" GUID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

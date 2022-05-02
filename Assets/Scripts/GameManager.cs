@@ -9,8 +9,5 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        // Force loading the instance if not already
-        var instance = GameManager.Instance;
-        Debug.Log("GameManager instance: " + instance);
     }
 }

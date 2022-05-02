@@ -867,6 +867,13 @@
 										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{07BC51B5-7F94-4B9C-BBAD-C325ECCDF0A8}">
+									<PropertyList>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+									<TransitionInfo/>
+								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{3A26B559-6E74-402B-AA39-40C210B3861D}">
 									<PropertyList>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
@@ -933,7 +940,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="L4_WheepingPotatoes" ID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
+								<PathElementRef Name="L4_WeepingPotatoes" ID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="20220501_WeepingPotatoes" ID="{792AE30D-9EB2-4639-A0D4-085DBF8A2811}" WorkUnitID="{E42B1FF0-2987-4422-A660-82C9665591E9}" Platform="Linked"/>

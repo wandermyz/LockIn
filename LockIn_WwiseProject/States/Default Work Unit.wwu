@@ -9,7 +9,7 @@
 						<State Name="L1_Help" ID="{31A346F0-E1D2-4FA7-82A2-C41BF9E419D0}"/>
 						<State Name="L2_RainingBread" ID="{1B1E1FF0-9237-4126-AC0E-0B669B255384}"/>
 						<State Name="L3_Falling" ID="{3B490DB1-0246-41CA-B06C-70825CF11F6E}"/>
-						<State Name="L4_WheepingPotatoes" ID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
+						<State Name="L4_WeepingPotatoes" ID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

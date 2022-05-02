@@ -13,8 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_20220425 = 2325257487U;
+        static const AkUniqueID PLAY_MAINBGM = 1691765453U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace LEVELGROUP
+        {
+            static const AkUniqueID GROUP = 1315568674U;
+
+            namespace STATE
+            {
+                static const AkUniqueID L1_HELP = 1241384302U;
+                static const AkUniqueID L2_RAININGBREAD = 3534658058U;
+                static const AkUniqueID L3_FALLING = 2711863090U;
+                static const AkUniqueID L4_WEEPINGPOTATOES = 2259867596U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace LEVELGROUP
+
+    } // namespace STATES
 
     namespace BANKS
     {

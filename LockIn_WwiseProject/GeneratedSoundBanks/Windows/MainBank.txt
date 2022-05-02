@@ -1,6 +1,25 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2325257487	Play_20220425			\Default Work Unit\Play_20220425	
+	1691765453	Play_MainBGM			\Default Work Unit\Play_MainBGM	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1315568674	LevelGroup			\Default Work Unit\LevelGroup	
+
+State	ID	Name	State Group			Notes
+	748895195	None	LevelGroup			
+	1241384302	L1_Help	LevelGroup			
+	2259867596	L4_WeepingPotatoes	LevelGroup			
+	2711863090	L3_Falling	LevelGroup			
+	3534658058	L2_RainingBread	LevelGroup			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	931469203	20220425	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\Voices\English(US)\20220425_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\20220425\20220425		48505700
+	146331676	20220501-3 - 0003 - Instrument - Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		14887452
+	170253037	20220501-2-03-Heavy Shaker	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-03-Heavy Shaker		8301848
+	190825172	20220426-03-Pots and Pans	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220426-03-Pots and Pans_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-03-Pots and Pans		7969272
+	198198537	20220501-2-02-Steinway Grand Piano	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-02-Steinway Grand Piano		8301848
+	336354772	20220501-3 - 0001 - Instrument - All is Lost	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0001 - Instrument - All is Lost		14887452
+	709305570	20220426-01-Antarctic Sun	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220426-01-Antarctic Sun_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-01-Antarctic Sun		7969272
+	826579402	20220501-2-01-Steinway Grand Piano	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-01-Steinway Grand Piano		8301848
+	865444543	20220501-3 - 0002 - Instrument - Tremble	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0002 - Instrument - Tremble		14887452
+	931469203	20220425	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\Voices\English(US)\20220425_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220425_Help\20220425_Help\20220425		48505700
+	982253332	20220426-02-Odd Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220426-02-Odd Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-02-Odd Key		7969272
 
