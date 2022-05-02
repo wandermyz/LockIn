@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public enum PlayerState 
+    {
+        Idle = 0,
+        Walk,
+        Run,
+        Jump
+    }
+
     public float Speed = 50.0f;
     public float JumpForce = 10.0f;
     public float AirJumpForce = 5.0f;
@@ -15,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public float RespawnY;
 
     [Header("Public for Debug")]
+    public PlayerState State = PlayerState.Idle;
     public float HorizontalAxis; 
     public bool JumpRequested = false;
     public bool IsGrounded = false;
@@ -25,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     private new Rigidbody2D rigidbody2D;
     private new Collider2D collider2D;
+    private Animator animator;
     private float gravityScale;
     private ContactPoint2D[] contactPointsBuffer = new ContactPoint2D[8];
 
@@ -36,6 +46,7 @@ public class PlayerController : MonoBehaviour
 
         rigidbody2D = GetComponent<Rigidbody2D>();
         collider2D = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -65,6 +76,22 @@ public class PlayerController : MonoBehaviour
             rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
         }
 
+        if (IsGrounded)
+        {
+            if (Mathf.Abs(HorizontalAxis) > 0.8f)
+            {
+                setState(PlayerState.Run);
+            }
+            else if (Mathf.Abs(HorizontalAxis) > 0.01f)
+            {
+                setState(PlayerState.Walk);
+            }
+            else if (rigidbody2D.velocity.y < 0.01f)
+            {
+                setState(PlayerState.Idle);
+            }
+        }
+
         if (Mathf.Abs(deltaX) > 0.01f)
         {
             transform.localScale = new Vector3(Mathf.Sign(deltaX), 1, 1);
@@ -76,12 +103,14 @@ public class PlayerController : MonoBehaviour
             if (IsGrounded)
             {
                 rigidbody2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+                setState(PlayerState.Jump);
             }
             else if (AirJumpUsed < MaxAirJump)
             {
                 AirJumpUsed += 1;
                 rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
                 rigidbody2D.AddForce(Vector2.up * AirJumpForce, ForceMode2D.Impulse);
+                setState(PlayerState.Jump, true);
             }
 
             JumpRequested = false;
@@ -146,5 +175,51 @@ public class PlayerController : MonoBehaviour
                 }
             }
         } 
+    }
+
+    private void setState(PlayerState newState, bool forceReset = false)
+    {
+        if (!forceReset && newState == State)
+        {
+            return;
+        }
+
+        Debug.Log("Player State: " + State.ToString() + " -> " + newState.ToString());
+
+        string animatorState = null;
+
+        switch (newState)
+        {
+            case PlayerState.Idle:
+                animatorState = "Idle";
+                break;
+
+            case PlayerState.Walk:
+                animatorState = "Walk";
+                break;
+
+            case PlayerState.Run:
+                animatorState = "Run";
+                break;
+
+            case PlayerState.Jump:
+                animatorState = "Jump";
+                break;
+
+            default:
+                animatorState = "Idle";
+                break;
+        }
+
+        if (forceReset)
+        {
+            animator.Play(animatorState, -1, 0);
+        }
+        else
+        {
+            animator.Play(animatorState);
+        }
+
+        State = newState;
     }
 }
