@@ -842,6 +842,119 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="20220514_Begin" ID="{00CEF6C8-9B8D-48C1-A3D1-EBD827315567}" ShortID="833804010">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E7B6BD34-05C8-4A86-9ED7-C39544F52CA7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="20220514" ID="{5E446648-809C-494C-8A63-C693EF6C20F3}" ShortID="257753658">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="197000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E7B6BD34-05C8-4A86-9ED7-C39544F52CA7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="20220514" ID="{3875BE65-DEEA-4004-929C-B23F890C2BCE}" ShortID="939662923">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="20220514" ID="{F13919A0-98F9-48A0-B3C9-6DB06AE5CA7F}">
+													<Language>SFX</Language>
+													<AudioFile>20220514.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="86927287"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{691A5573-2496-46E6-A4C2-A1E3C1A98069}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EBF00761-50F9-4CFA-8AA7-98D2B8211404}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="20220514" ID="{A22E5BED-419B-46C6-A68A-9BBAB9E326EB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="197000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="20220514" ID="{F13919A0-98F9-48A0-B3C9-6DB06AE5CA7F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{8E1FBAB2-34B1-4673-85FF-46DF83E696F1}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{DC969E62-D9B3-4E68-8817-DC5B49F2B3A2}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="197000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{9DA3BB58-3380-4AA2-B399-B2C94B982264}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{733BCC12-124A-4CCC-A31F-BA7438924C03}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{50E32F0A-CB98-4501-AA68-04215EFC8C09}" ShortID="666158030"/>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{8E62A931-2897-477C-8C4C-F0C249BEFF56}">
@@ -871,7 +984,6 @@
 									<PropertyList>
 										<Property Name="SourceContextType" Type="int16" Value="1"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo/>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{3A26B559-6E74-402B-AA39-40C210B3861D}">
@@ -944,6 +1056,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="20220501_WeepingPotatoes" ID="{792AE30D-9EB2-4639-A0D4-085DBF8A2811}" WorkUnitID="{E42B1FF0-2987-4422-A660-82C9665591E9}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="L0_Begin" ID="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="20220514_Begin" ID="{00CEF6C8-9B8D-48C1-A3D1-EBD827315567}" WorkUnitID="{E42B1FF0-2987-4422-A660-82C9665591E9}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

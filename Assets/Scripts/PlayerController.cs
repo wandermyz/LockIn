@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public bool LeftBlocking = false;
     public bool RightBlocking = false;
     public int AirJumpUsed = 0;
+    public int RotationFixingFrames = 0;
 
     private new Rigidbody2D rigidbody2D;
     private new Collider2D collider2D;
@@ -71,6 +72,8 @@ public class PlayerController : MonoBehaviour
 
         // Movement
         float deltaX = HorizontalAxis * Speed * Time.fixedDeltaTime;
+        rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+
         if (IsGrounded || (deltaX > 0 && !RightBlocking) || (deltaX < 0 && !LeftBlocking))
         {
             rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
@@ -160,7 +163,11 @@ public class PlayerController : MonoBehaviour
                 AirJumpUsed = 0;
                 if (Mathf.Abs(HorizontalAxis) > 0)
                 {
-                    rigidbody2D.rotation = rotation - 90;
+                    if (RotationFixingFrames < 5)
+                    {
+                        ++RotationFixingFrames;
+                        rigidbody2D.rotation = rotation - 90;
+                    }
                 }
             }
             else 
@@ -175,6 +182,11 @@ public class PlayerController : MonoBehaviour
                 }
             }
         } 
+
+        if (!IsGrounded)
+        {
+            RotationFixingFrames = 0;
+        }
     }
 
     private void setState(PlayerState newState, bool forceReset = false)
