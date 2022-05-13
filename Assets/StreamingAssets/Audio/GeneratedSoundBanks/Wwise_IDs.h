@@ -24,6 +24,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID L0_BEGIN = 819628587U;
                 static const AkUniqueID L1_HELP = 1241384302U;
                 static const AkUniqueID L2_RAININGBREAD = 3534658058U;
                 static const AkUniqueID L3_FALLING = 2711863090U;

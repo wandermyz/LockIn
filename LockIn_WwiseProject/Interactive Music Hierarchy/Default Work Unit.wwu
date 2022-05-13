@@ -952,7 +952,19 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{50E32F0A-CB98-4501-AA68-04215EFC8C09}" ShortID="666158030"/>
+								<MusicPlaylistItem Name="" ID="{50E32F0A-CB98-4501-AA68-04215EFC8C09}" ShortID="666158030">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{06C4658A-B47A-4CA0-B2BE-D97D18FB9810}" ShortID="753797342">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="20220514" ID="{5E446648-809C-494C-8A63-C693EF6C20F3}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>

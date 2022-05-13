@@ -16,13 +16,17 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="4005536601">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1421422542">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1691765453" Name="Play_MainBGM" ObjectPath="\Events\Default Work Unit\Play_MainBGM" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="86927287" Language="SFX">
+							<ShortName>20220514.wav</ShortName>
+							<Path>SFX\20220514_D79FB2B7.wem</Path>
+						</File>
 						<File Id="146331676" Language="SFX">
 							<ShortName>20220501-3 - 0003 - Instrument - Key.wav</ShortName>
 							<Path>SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem</Path>
@@ -91,10 +95,19 @@
 								<File Id="826579402"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}">
+							<Media>
+								<File Id="86927287"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="86927287" Language="SFX">
+					<ShortName>20220514.wav</ShortName>
+					<Path>SFX\20220514_D79FB2B7.wem</Path>
+				</File>
 				<File Id="146331676" Language="SFX">
 					<ShortName>20220501-3 - 0003 - Instrument - Key.wav</ShortName>
 					<Path>SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem</Path>
@@ -144,6 +157,7 @@
 						<State Id="3534658058" Name="L2_RainingBread" ObjectPath="\States\Default Work Unit\LevelGroup\L2_RainingBread" GUID="{1B1E1FF0-9237-4126-AC0E-0B669B255384}"/>
 						<State Id="2711863090" Name="L3_Falling" ObjectPath="\States\Default Work Unit\LevelGroup\L3_Falling" GUID="{3B490DB1-0246-41CA-B06C-70825CF11F6E}"/>
 						<State Id="2259867596" Name="L4_WeepingPotatoes" ObjectPath="\States\Default Work Unit\LevelGroup\L4_WeepingPotatoes" GUID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
+						<State Id="819628587" Name="L0_Begin" ObjectPath="\States\Default Work Unit\LevelGroup\L0_Begin" GUID="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>

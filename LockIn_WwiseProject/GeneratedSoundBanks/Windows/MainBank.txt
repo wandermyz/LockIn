@@ -6,12 +6,14 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	LevelGroup			
+	819628587	L0_Begin	LevelGroup			
 	1241384302	L1_Help	LevelGroup			
 	2259867596	L4_WeepingPotatoes	LevelGroup			
 	2711863090	L3_Falling	LevelGroup			
 	3534658058	L2_RainingBread	LevelGroup			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	86927287	20220514	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220514_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220514_Begin\20220514\20220514		37824144
 	146331676	20220501-3 - 0003 - Instrument - Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		14887452
 	170253037	20220501-2-03-Heavy Shaker	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-03-Heavy Shaker		8301848
 	190825172	20220426-03-Pots and Pans	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Windows\SFX\20220426-03-Pots and Pans_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-03-Pots and Pans		7969272
