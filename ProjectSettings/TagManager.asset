@@ -14,10 +14,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - HitObject
+  - ObjectGround
+  - Player
+  - PlayerPaw
   - 
   - 
   - 

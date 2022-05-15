@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/02_RainingBread.unity
     guid: 6871dc3f668f20b4ba91d4549c18efe1
   - enabled: 1
+    path: Assets/Scenes/03_Falling.unity
+    guid: 72740a471589c6a42b58eea123ba48c6
+  - enabled: 1
+    path: Assets/Scenes/04_ChickenSoup.unity
+    guid: 848f3b014ca49cf4f888557a372d19ab
+  - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: 50a32180918217f4aaba8321969ccc0f
   m_configObjects: {}

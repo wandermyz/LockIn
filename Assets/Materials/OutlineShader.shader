@@ -70,7 +70,7 @@ Shader "Sprites/Outline"
                 }
  
                 col = lerp(col, _OutlineColor, outline);
-                return float4(1, 1, 1, col.a);
+                return float4(_OutlineColor.r, _OutlineColor.g, _OutlineColor.b, col.a);
             }
             ENDCG
         }

@@ -59,11 +59,6 @@ public class PlayerController : MonoBehaviour
         {
             JumpRequested = true;
         }
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Debug.Log("Fire");
-        }
     }
 
     void FixedUpdate()
