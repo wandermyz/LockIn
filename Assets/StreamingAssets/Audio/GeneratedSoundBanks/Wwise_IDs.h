@@ -14,10 +14,36 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_MAINBGM = 1691765453U;
+        static const AkUniqueID SET_STATE_FALLINGDOWN = 1444949965U;
+        static const AkUniqueID SET_STATE_FALLINGLIGHT = 2258315847U;
     } // namespace EVENTS
 
     namespace STATES
     {
+        namespace FALLINGDOWN
+        {
+            static const AkUniqueID GROUP = 3934905550U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DISABLED = 3248502869U;
+                static const AkUniqueID ENABLED = 4174102348U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace FALLINGDOWN
+
+        namespace FALLINGLIGHT
+        {
+            static const AkUniqueID GROUP = 746704402U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DISABLED = 3248502869U;
+                static const AkUniqueID ENABLED = 4174102348U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace FALLINGLIGHT
+
         namespace LEVELGROUP
         {
             static const AkUniqueID GROUP = 1315568674U;
@@ -34,6 +60,12 @@ namespace AK
         } // namespace LEVELGROUP
 
     } // namespace STATES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID FALLINGDOWNREADY = 778577675U;
+        static const AkUniqueID FALLINGLIGHTREADY = 1834139223U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

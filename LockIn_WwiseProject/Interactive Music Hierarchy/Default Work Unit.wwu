@@ -556,7 +556,11 @@
 												<CustomStateList>
 													<CustomState>
 														<StateRef Name="Enabled" ID="{D6A9EECF-71C3-43F4-80BC-E65994871453}"/>
-														<CustomState Name="" ID="{10A3F525-01DD-4ACB-A0A0-D19DEABB151A}" ShortID="657670943"/>
+														<CustomState Name="" ID="{10A3F525-01DD-4ACB-A0A0-D19DEABB151A}" ShortID="657670943">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-15"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Disabled" ID="{ECFADC2E-3749-4D27-B6C5-F936468F1AF8}"/>

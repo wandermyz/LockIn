@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     public bool RightBlocking = false;
     public int AirJumpUsed = 0;
     public int RotationFixingFrames = 0;
+    public int MaxRotationFixingFrames = 5;
 
     private new Rigidbody2D rigidbody2D;
     private new Collider2D collider2D;
@@ -163,7 +164,7 @@ public class PlayerController : MonoBehaviour
                 AirJumpUsed = 0;
                 if (Mathf.Abs(HorizontalAxis) > 0)
                 {
-                    if (RotationFixingFrames < 5)
+                    if (RotationFixingFrames < MaxRotationFixingFrames)
                     {
                         ++RotationFixingFrames;
                         rigidbody2D.rotation = rotation - 90;

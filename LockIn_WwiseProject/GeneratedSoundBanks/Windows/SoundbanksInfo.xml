@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1432161764">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2840347558">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1421422542">
+		<SoundBank Id="2880737896" Language="SFX" Hash="3632704429">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -102,6 +102,16 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1444949965" Name="Set_State_FallingDown" ObjectPath="\Events\Default Work Unit\Set_State_FallingDown" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingDown\Enabled"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2258315847" Name="Set_State_FallingLight" ObjectPath="\Events\Default Work Unit\Set_State_FallingLight" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingLight\Enabled"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="86927287" Language="SFX">
@@ -160,7 +170,14 @@
 						<State Id="819628587" Name="L0_Begin" ObjectPath="\States\Default Work Unit\LevelGroup\L0_Begin" GUID="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingDown\Enabled" GUID="{BEF3B987-582D-4305-B9B6-7E324ED04D96}">
+					<States/>
+				</StateGroup>
 			</StateGroups>
+			<Triggers>
+				<Trigger Id="778577675" Name="FallingDownReady" ObjectPath="\Triggers\Default Work Unit\FallingDownReady"/>
+				<Trigger Id="1834139223" Name="FallingLightReady" ObjectPath="\Triggers\Default Work Unit\FallingLightReady"/>
+			</Triggers>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

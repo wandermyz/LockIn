@@ -7,6 +7,7 @@ public class EnableByTrigger : MonoBehaviour
 {
     public int RequiredCount = 1; 
     public bool Repeatable = false;
+    public bool KeepAliveOnTrigger = false; 
     public GameObject[] Enables;
 
     public SpriteCounter Counter;
@@ -42,6 +43,11 @@ public class EnableByTrigger : MonoBehaviour
             }
 
             if (!Repeatable)
+            {
+                GetComponent<Collider2D>().enabled = false;
+            }
+
+            if (!Repeatable && !KeepAliveOnTrigger)
             {
                 gameObject.SetActive(false);
             }

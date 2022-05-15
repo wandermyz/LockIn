@@ -9,6 +9,12 @@ public class BGMManager : Singleton<BGMManager>
     public bool OnBarThisFrame {get; private set;}
     public string CueThisFrame {get; private set;}
     private AkAmbient akAmbient;
+
+    public void PostTrigger(string trigger)
+    {
+        AkSoundEngine.PostTrigger(trigger, gameObject);
+    }
+
     void Start()
     {
         akAmbient = GetComponent<AkAmbient>();
