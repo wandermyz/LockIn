@@ -14,6 +14,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_State_FallingDown" ID="{75729C50-8AE4-45B2-81E1-6868476E73AF}">
+					<ChildrenList>
+						<Action Name="" ID="{934EF439-4F96-4F88-93A4-915D3585FD5F}" ShortID="768546334">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enabled" ID="{BEF3B987-582D-4305-B9B6-7E324ED04D96}" WorkUnitID="{D905B40E-FE43-4C6F-AE10-1470EFF98ABF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Switch_a" ID="{4469B6D6-D2FF-4CD0-A0AC-432ACCBF7A13}">
+					<ChildrenList>
+						<Action Name="" ID="{89699309-C370-429E-949D-09E4B577D2E8}" ShortID="1038746654">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="a" ID="{627DCA6C-58EF-4800-B3D0-25E4A6930768}" WorkUnitID="{4ED15F09-7D06-43AC-AE0D-AE7AC5A1503B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_FallingLight" ID="{5EE56C3E-FAE9-4E4A-B1B4-0C1B36B524CF}">
+					<ChildrenList>
+						<Action Name="" ID="{6D01A6A3-3271-4416-8389-AD23D64F45CE}" ShortID="571594910">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enabled" ID="{D6A9EECF-71C3-43F4-80BC-E65994871453}" WorkUnitID="{D905B40E-FE43-4C6F-AE10-1470EFF98ABF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

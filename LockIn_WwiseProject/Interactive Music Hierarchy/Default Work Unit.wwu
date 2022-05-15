@@ -384,6 +384,10 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="20220501_Falling" ID="{46475828-59D2-4210-8B81-F8AFA520FAA8}" ShortID="247020244">
+							<PropertyList>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="65"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E7B6BD34-05C8-4A86-9ED7-C39544F52CA7}"/>
@@ -396,7 +400,6 @@
 								<MusicSegment Name="20220501-3" ID="{819617A9-F248-4C8E-AA7C-184854AB2CE3}" ShortID="921001901">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="81408.7410237587"/>
-										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="65"/>
 									</PropertyList>
 									<ReferenceList>
@@ -423,6 +426,27 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="FallingDown" ID="{2CA3ACAF-E62B-4537-88AF-1BB8EE1A9BF5}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Enabled" ID="{BEF3B987-582D-4305-B9B6-7E324ED04D96}"/>
+														<CustomState Name="" ID="{F941AB05-091D-4C28-8D59-329DA9CAF763}" ShortID="234586459"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Disabled" ID="{186DEFBA-9F13-4DA0-A93B-6DD6CF3A6E9A}"/>
+														<CustomState Name="" ID="{2D38591F-D01A-438D-B297-959D7D0BFA34}" ShortID="63541407">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{7F7E3299-36D8-4D71-B12A-53BBB666E81E}">
 													<PropertyList>
@@ -523,6 +547,27 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="FallingLight" ID="{44E9346D-A96C-4533-A9C2-32D9C8C92326}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Enabled" ID="{D6A9EECF-71C3-43F4-80BC-E65994871453}"/>
+														<CustomState Name="" ID="{10A3F525-01DD-4ACB-A0A0-D19DEABB151A}" ShortID="657670943"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Disabled" ID="{ECFADC2E-3749-4D27-B6C5-F936468F1AF8}"/>
+														<CustomState Name="" ID="{62B4F765-A44C-4FA3-B721-A69A351C163F}" ShortID="838385502">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{C3D1FFBE-B38C-473E-8F17-14B2C292E820}">
 													<PropertyList>
@@ -580,6 +625,238 @@
 													</MusicCue>
 												</Local>
 											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{DA5756D7-8518-4D28-A09A-AF2BB16A6A1E}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="14512.9581921571"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{D3914924-77BB-4F21-B155-AA1E3E24AD4B}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="25631.2792825167"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{224E6F0E-B29E-45F4-BDA5-C251FE19BFFC}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="30551.7339161773"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{43D759E6-0C09-48F5-9C3A-E042133D58F0}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="44092.8177440552"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{68BC281C-ED73-4A06-882F-38F79A7605CE}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="47814.2028223267"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{B248F5C4-D476-412B-9CC5-3B3DBD389CD3}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="51477.4331286706"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{954256F2-18C1-4CE7-8754-66A4FB3A2764}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="58903.4465267225"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{775761FF-C0F3-49F6-B3BD-F38AEAA867D0}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="62512.9581921571"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Light" ID="{C57B88AA-DD2B-4579-978B-FE634C362D18}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="73631.2792825167"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="StingerDownReady" ID="{A3B18566-2FD7-409A-B63B-76BC67DC84AE}" ShortID="1013666498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E7B6BD34-05C8-4A86-9ED7-C39544F52CA7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="EmptyTrack" ID="{2504A94B-911C-405B-9487-744E5697C7F9}" ShortID="688051294">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{94B55065-635E-4479-A78C-9D7D5A54027C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D7178701-0631-40DA-89E0-E7ED8689F43E}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicEventCue Name="" ID="{0E296227-7789-4E5A-802E-76FF4FCB48D2}" ShortID="514409187">
+																					<ReferenceList>
+																						<Reference Name="PostEventTarget">
+																							<ObjectRef Name="Set_State_FallingDown" ID="{75729C50-8AE4-45B2-81E1-6868476E73AF}" WorkUnitID="{3119519D-93ED-48FC-BE60-8B47D7906B53}"/>
+																						</Reference>
+																					</ReferenceList>
+																				</MusicEventCue>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{B5521875-C260-4495-AE9E-77A4CF0334D8}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{842279A3-C086-4B45-A6C8-49AD57462CCD}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="StingerLightReady" ID="{7B4DB188-CD6E-4659-B562-EE295744328D}" ShortID="801946609">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E7B6BD34-05C8-4A86-9ED7-C39544F52CA7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="EmptyTrack" ID="{7EB8A7B3-F484-4C85-984D-E1589A8E9305}" ShortID="685254059">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{62E776BC-5EC6-4170-B516-5F38FF15D29B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{24FC6E09-C46E-4E8F-B231-A0D2D00A769A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicEventCue Name="" ID="{A926F633-8363-4C1F-A70A-4D8585C42BA3}" ShortID="966797363">
+																					<ReferenceList>
+																						<Reference Name="PostEventTarget">
+																							<ObjectRef Name="Set_State_FallingLight" ID="{5EE56C3E-FAE9-4E4A-B1B4-0C1B36B524CF}" WorkUnitID="{3119519D-93ED-48FC-BE60-8B47D7906B53}"/>
+																						</Reference>
+																					</ReferenceList>
+																				</MusicEventCue>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{0A70DFA6-10EF-4830-8629-FBCA82FDB540}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{B350DF34-60C6-420C-9563-133CF52FC84C}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
@@ -597,9 +874,38 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<ObjectLists/>
+							<ObjectLists>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{C2DD08B8-D087-419D-9B46-297147EF181A}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+												</PropertyList>
+												<TriggerRef Name="FallingDownReady" ID="{2606CB8E-CA11-4232-B946-38BAB1C788A2}" WorkUnitID="{AE0920AC-F72B-4793-A55D-59A4D57E2B4D}"/>
+												<SegmentRef Name="StingerDownReady" ID="{A3B18566-2FD7-409A-B63B-76BC67DC84AE}" WorkUnitID="{E42B1FF0-2987-4422-A660-82C9665591E9}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{1EB65495-59BC-4E7D-AAF7-F8C5FBF730CF}">
+												<PropertyList>
+													<Property Name="CustomCueMatchName" Type="string" Value="Light"/>
+													<Property Name="PlaySegmentAt" Type="int16" Value="5"/>
+												</PropertyList>
+												<TriggerRef Name="FallingLightReady" ID="{E5F39EC1-C851-4D30-B0C3-DCB5658C29D7}" WorkUnitID="{AE0920AC-F72B-4793-A55D-59A4D57E2B4D}"/>
+												<SegmentRef Name="StingerLightReady" ID="{7B4DB188-CD6E-4659-B562-EE295744328D}" WorkUnitID="{E42B1FF0-2987-4422-A660-82C9665591E9}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{E6D72CF8-4197-400B-A643-1A9C65395105}" ShortID="905625150">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{4C0F73A4-87A1-44DF-AA17-3C636843A16F}" ShortID="729915301">
 											<PropertyList>

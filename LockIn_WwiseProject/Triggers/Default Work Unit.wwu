@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AE0920AC-F72B-4793-A55D-59A4D57E2B4D}" SchemaVersion="103">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{AE0920AC-F72B-4793-A55D-59A4D57E2B4D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AE0920AC-F72B-4793-A55D-59A4D57E2B4D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="FallingDownReady" ID="{2606CB8E-CA11-4232-B946-38BAB1C788A2}"/>
+				<Trigger Name="FallingLightReady" ID="{E5F39EC1-C851-4D30-B0C3-DCB5658C29D7}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>
