@@ -7,7 +7,7 @@ public class EnableByMoving : MonoBehaviour
 {
     public GameObject[] Enables;
 
-    private Rigidbody2D rigidbody2D;
+    private new Rigidbody2D rigidbody2D;
 
     void Start()
     {
