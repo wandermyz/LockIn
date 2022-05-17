@@ -437,7 +437,7 @@
 														<StateRef Name="Enabled" ID="{BEF3B987-582D-4305-B9B6-7E324ED04D96}"/>
 														<CustomState Name="" ID="{F941AB05-091D-4C28-8D59-329DA9CAF763}" ShortID="234586459">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="6"/>
+																<Property Name="Volume" Type="Real64" Value="12"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -487,6 +487,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="20220501-3 - 0002 - Instrument - Tremble" ID="{80130F8D-D3BA-4D93-8A1C-C9F5CC5A2A88}" ShortID="941981804">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
@@ -562,7 +569,7 @@
 														<StateRef Name="Enabled" ID="{D6A9EECF-71C3-43F4-80BC-E65994871453}"/>
 														<CustomState Name="" ID="{10A3F525-01DD-4ACB-A0A0-D19DEABB151A}" ShortID="657670943">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-15"/>
+																<Property Name="Volume" Type="Real64" Value="-6"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>

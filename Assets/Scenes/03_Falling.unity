@@ -663,17 +663,22 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6efb90d65a9b32245a95c412f7b3b27e, type: 2}
     - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
       propertyPath: MaxRotationFixingFrames
-      value: 300
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 273272606719072421, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072430, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: m_AngularDrag
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 273272606719072431, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 273272606719072421, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
 --- !u!1 &1489467665 stripped
 GameObject:
@@ -687,7 +692,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489467665}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
