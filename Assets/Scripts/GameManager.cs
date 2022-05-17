@@ -7,6 +7,8 @@ public class GameManager : Singleton<GameManager>
     public int CandlesCount = 0;
     public int DropCount = 0;
 
+    public PlayerController PlayerController;
+
     void Start()
     {
     }

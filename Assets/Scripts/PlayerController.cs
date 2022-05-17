@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
         Idle = 0,
         Walk,
         Run,
-        Jump
+        Jump,
+        Kill
     }
 
     public float Speed = 50.0f;
@@ -41,9 +42,16 @@ public class PlayerController : MonoBehaviour
     private ContactPoint2D[] contactPointsBuffer = new ContactPoint2D[8];
 
     private Vector3 spawningPosition;
+
+    public void Kill()
+    {
+        StartCoroutine(executeKill());
+    }
     
     void Start()
     {
+        GameManager.Instance.PlayerController = this;
+
         spawningPosition = transform.position;
 
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -63,6 +71,25 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Drop
+        if (transform.position.y < RespawnY) 
+        {
+            rigidbody2D.MovePosition(spawningPosition);
+            rigidbody2D.rotation = 0;
+            rigidbody2D.velocity = Vector2.zero;
+            rigidbody2D.angularVelocity = 0;
+            collider2D.enabled = true;
+
+            setState(PlayerState.Idle);
+
+            ++GameManager.Instance.DropCount;
+        }
+
+        if (State == PlayerState.Kill)
+        {
+            return;
+        }
+
         // Ground Detection
         detectGround();
 
@@ -113,17 +140,6 @@ public class PlayerController : MonoBehaviour
             }
 
             JumpRequested = false;
-        }
-
-        // Drop
-        if (transform.position.y < RespawnY) 
-        {
-            rigidbody2D.MovePosition(spawningPosition);
-            rigidbody2D.rotation = 0;
-            rigidbody2D.velocity = Vector2.zero;
-            rigidbody2D.angularVelocity = 0;
-
-            ++GameManager.Instance.DropCount;
         }
     }
 
@@ -230,4 +246,15 @@ public class PlayerController : MonoBehaviour
 
         State = newState;
     }
+
+    private IEnumerator executeKill()
+    {
+        setState(PlayerState.Kill);
+        collider2D.enabled = false;
+        rigidbody2D.simulated = false;
+
+        yield return new WaitForSeconds(1);
+
+        rigidbody2D.simulated = true;
+    } 
 }
