@@ -203,7 +203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6345491899441532261
 Transform:
   m_ObjectHideFlags: 0
@@ -332,4 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Velocity: {x: 10, y: 0}
   Distance: 0.75
+  Shooting: 0
+  ShootingBall: {fileID: 7723908078776392142, guid: 18793800385e54249b8d71f26a7bf6c3, type: 3}
+  ShootingLocalImpulse: {x: 170, y: 0}
   State: 0

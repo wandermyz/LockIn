@@ -14,6 +14,9 @@ public class PlayerPaw : MonoBehaviour
 
     public Vector2 Velocity;
     public float Distance;
+    public bool Shooting;
+    public GameObject ShootingBall;
+    public Vector2 ShootingLocalImpulse;
 
     [Header("Debug")]
     public PlayerPawState State;
@@ -91,6 +94,16 @@ public class PlayerPaw : MonoBehaviour
         if (State == PlayerPawState.Idle)    
         {
             State = PlayerPawState.Fire;
+
+            if (Shooting && ShootingBall != null)
+            {
+                var newShootingBall = Instantiate(ShootingBall, transform.position, transform.rotation);
+                Rigidbody2D shootingBallRididbody = newShootingBall.GetComponent<Rigidbody2D>();
+                
+                Vector3 localImpulse = ShootingLocalImpulse.ToVector3();
+                Vector3 impulse = transform.TransformVector(localImpulse);
+                shootingBallRididbody.AddForce(impulse.ToVector2(), ForceMode2D.Impulse);
+            }
         }
     }
 }
