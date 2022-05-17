@@ -5,6 +5,7 @@ Shader "Sprites/Outline"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _OutlineColor("Outline Color", Color) = (1,1,1,1)
+        _FillColor("Fill Color", Color) = (0,0,0,1)
         _Threshold("Threshold", Range(0, 0.5)) = 0.4
     }
     SubShader
@@ -44,6 +45,7 @@ Shader "Sprites/Outline"
             float4 _MainTex_ST;
             float4 _MainTex_TexelSize;
             fixed4 _OutlineColor;
+            fixed4 _FillColor;
             float _Threshold;
 
             v2f vert (appdata v)
@@ -64,13 +66,15 @@ Shader "Sprites/Outline"
 				fixed bottomPixel = tex2D(_MainTex, i.uv + float2(0, -_MainTex_TexelSize.y)).a;
  
 				fixed outline = (1 - leftPixel * upPixel * rightPixel * bottomPixel) * col.a;
+                col = lerp(col, _OutlineColor, outline);
                 if (outline < _Threshold)
                 {
-                    discard;
+                    return float4(_FillColor.r, _FillColor.g, _FillColor.b, col.a);
                 }
- 
-                col = lerp(col, _OutlineColor, outline);
-                return float4(_OutlineColor.r, _OutlineColor.g, _OutlineColor.b, col.a);
+                else
+                {
+                    return float4(_OutlineColor.r, _OutlineColor.g, _OutlineColor.b, col.a);
+                }
             }
             ENDCG
         }
