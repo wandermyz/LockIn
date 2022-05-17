@@ -23,11 +23,15 @@ public class PlayerPaw : MonoBehaviour
 
     private Vector3 initialLocalPos;
     private Vector3 targetPos;
+    private Animator animator;
+    private int pawLayerIndex;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         initialLocalPos = transform.localPosition;
+        animator = GetComponentInParent<Animator>();
+        pawLayerIndex = animator.GetLayerIndex("Paw");
     }
 
     void Update()
@@ -35,6 +39,7 @@ public class PlayerPaw : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             pawRequested = true;
+            animator.Play("Paw", pawLayerIndex, 0);
         }
     }
 
