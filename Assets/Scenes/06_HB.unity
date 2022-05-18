@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &87864595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5951716635241313023, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
-  m_PrefabInstance: {fileID: 5951716635158759404}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &158245649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,6 +177,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -306,6 +305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &244333454 stripped
@@ -368,6 +371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &278493806 stripped
@@ -429,6 +436,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -683,6 +694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &477834287 stripped
@@ -745,6 +760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &503468235 stripped
@@ -806,6 +825,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -919,6 +942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &831925777 stripped
@@ -980,6 +1007,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -1127,6 +1158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1048877671 stripped
@@ -1143,6 +1178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1087778187}
+  - component: {fileID: 1087778188}
   m_Layer: 0
   m_Name: Candles
   m_TagString: Untagged
@@ -1193,8 +1229,21 @@ Transform:
   - {fileID: 901954632}
   - {fileID: 1714393059}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087778188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087778186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1975e7d8594e110488b4411f6a95d362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveArea: {fileID: 1155949011}
 --- !u!1001 &1127150127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1249,6 +1298,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -1311,6 +1364,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -1380,6 +1437,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 440c00dff840dbb41bc7303535136c2c, type: 3}
+--- !u!1 &1155949010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155949012}
+  - component: {fileID: 1155949011}
+  m_Layer: 0
+  m_Name: CandlesSpawnArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1155949011
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155949010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1155949012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155949010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.79, y: 8.99, z: 0}
+  m_LocalScale: {x: 1.6452, y: 1.6452, z: 1.6452}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1190071704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1434,6 +1549,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -1497,6 +1616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1227623068 stripped
@@ -1558,6 +1681,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -1621,6 +1748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1292222763 stripped
@@ -1683,6 +1814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1313153166 stripped
@@ -1744,6 +1879,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -1893,6 +2032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7157687917230478996, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: FlyingCandlesManager
+      value: 
+      objectReference: {fileID: 1087778188}
     - target: {fileID: 7497222213848032777, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1953,6 +2096,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -2081,6 +2228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1511567541 stripped
@@ -2142,6 +2293,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -2205,6 +2360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1686563924 stripped
@@ -2266,6 +2425,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -2329,6 +2492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1711908382 stripped
@@ -2390,6 +2557,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -2453,6 +2624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1786851208 stripped
@@ -2515,6 +2690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!4 &1975008278 stripped
@@ -2576,6 +2755,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -2818,7 +3001,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2145339921
 PrefabInstance:
@@ -2874,6 +3057,10 @@ PrefabInstance:
     - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_Name
       value: Candle (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
@@ -2994,77 +3181,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candle
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
---- !u!1001 &1641545409841618577
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -5217174384529361094, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: Enables.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5217174384529361094, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: Enables.Array.data[0]
-      value: 
-      objectReference: {fileID: 87864595}
-    - target: {fileID: 1641545408969554307, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_Name
-      value: Candle
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554307, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
+    - target: {fileID: 7351611790755415543, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -16.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
 --- !u!1001 &1865395795850150694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3155,7 +3277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5951716635241313017, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5951716635241313017, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3225,7 +3347,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8033459867826037643, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8033459867826037643, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: m_LocalPosition.x

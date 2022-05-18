@@ -17,6 +17,7 @@ public class PlayerPaw : MonoBehaviour
     public bool Shooting;
     public GameObject ShootingBall;
     public Vector2 ShootingLocalImpulse;
+    public FlyingCandlesManager FlyingCandlesManager;
 
     [Header("Debug")]
     public PlayerPawState State;
@@ -103,6 +104,11 @@ public class PlayerPaw : MonoBehaviour
                 Vector3 localImpulse = ShootingLocalImpulse.ToVector3();
                 Vector3 impulse = transform.TransformVector(localImpulse);
                 shootingBallRididbody.AddForce(impulse.ToVector2(), ForceMode2D.Impulse);
+            }
+
+            if (FlyingCandlesManager != null)
+            {
+                FlyingCandlesManager.SpawnOne(transform.position);
             }
         }
     }
