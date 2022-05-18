@@ -9,6 +9,8 @@ public class FlyingCandle : MonoBehaviour
     [Header("Debug")]
     public bool Arrived;
 
+    public GameObject Flame;
+
     private Vector3 spawnedPosition;
     private Vector3 targetPosition;
     private Vector3 flyingDir;
@@ -24,9 +26,14 @@ public class FlyingCandle : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    public void LightUp()
+    {
+        Flame.SetActive(true);
+    }
+
     void Start()
     {
-        
+        Flame = transform.GetChild(0).gameObject;
     }
 
     void FixedUpdate()

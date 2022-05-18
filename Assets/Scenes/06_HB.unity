@@ -842,6 +842,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 482207483328309148, guid: 91b4e13f8dffaee459d629b0f088c0f7, type: 3}
   m_PrefabInstance: {fileID: 1865395795850150694}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &546033561 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3679915275908351581, guid: 91b4e13f8dffaee459d629b0f088c0f7, type: 3}
+  m_PrefabInstance: {fileID: 1865395795850150694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &615937519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5716075535470157283, guid: b0f025b59ad46294ca6e8ec5723fa3a5, type: 3}
@@ -1244,6 +1249,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActiveArea: {fileID: 1155949011}
+  DimSprites:
+  - {fileID: 546033561}
+  - {fileID: 978954490}
+  EnablesOnLightUp:
+  - {fileID: 2111863393}
+  DimmedAlpha: 0.2
+  DimVelocity: 0.5
+  LightingUpInterval: 0.1
+  StateInterval: 1
+  State: 0
 --- !u!1001 &1127150127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1842,7 +1857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7351611790755415539, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.14
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 7351611790755415539, guid: 8dca27011a5d77f45bd8a3c5148d616b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2915,7 +2930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2111863394
 Animator:
   serializedVersion: 4

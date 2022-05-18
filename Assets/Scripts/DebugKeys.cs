@@ -15,5 +15,14 @@ public class DebugKeys : MonoBehaviour
                 SceneManager.LoadScene(levelLink.NextScene);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            var m = GameObject.FindObjectOfType<FlyingCandlesManager>();
+            if (m != null)
+            {
+                m.DebugSpawnAll();
+            }
+        }
     }
 }
