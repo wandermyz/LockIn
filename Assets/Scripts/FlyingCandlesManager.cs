@@ -9,13 +9,17 @@ public class FlyingCandlesManager : MonoBehaviour
         Idle = 0,
         Dimming,
         LightingUp,
+        Animation,
+        Blowing,
+        Undimming,
         Done
     }
 
     public BoxCollider2D ActiveArea;
     public SpriteRenderer[] DimSprites;
 
-    public GameObject[] EnablesOnLightUp;
+    public Animator HBAnim;
+    public BlowController BlowController;
 
     [Range(0, 1)]
     public float DimmedAlpha = 0.8f;
@@ -98,15 +102,46 @@ public class FlyingCandlesManager : MonoBehaviour
 
         yield return new WaitForSeconds(StateInterval);
 
-        State = FlyingCandlesState.Done;
+        State = FlyingCandlesState.Animation;
 
-        if (EnablesOnLightUp != null)
+        HBAnim.gameObject.SetActive(true);
+
+        while (!HBAnim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
         {
-            foreach (var go in EnablesOnLightUp)
-            {
-                go.SetActive(true);
-            }
+            yield return new WaitForEndOfFrame();
         }
+
+        yield return new WaitForSeconds(StateInterval);
+
+        State = FlyingCandlesState.Blowing;
+
+        BlowController.Candles = SpawnedCandles;
+        BlowController.gameObject.SetActive(true);
+
+        while (!BlowController.IsDone)
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(StateInterval);
+
+        State = FlyingCandlesState.Undimming;
+
+        alpha = DimmedAlpha;
+
+        while (alpha < 1.0f)
+        {
+            alpha += DimVelocity * Time.deltaTime;
+
+            foreach(var s in DimSprites)
+            {
+                s.color = new Color(s.color.r, s.color.g, s.color.b, alpha);
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        State = FlyingCandlesState.Done;
     }
 
     public void DebugSpawnAll()
