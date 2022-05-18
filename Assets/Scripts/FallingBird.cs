@@ -20,6 +20,7 @@ public class FallingBird : MonoBehaviour
     private Vector2 initialPos;
     private bool runeCollected;
     private int displayRune;
+    private bool richTriggered;
 
     void Start()
     {
@@ -40,12 +41,13 @@ public class FallingBird : MonoBehaviour
             RuneText.text = displayRune.ToString();
         }
 
-        if (displayRune > 100000 && EnablesOnRich != null)
+        if (displayRune > 100000 && EnablesOnRich != null && !richTriggered)
         {
             foreach(var go in EnablesOnRich)
             {
                 go.SetActive(true);
             }
+            richTriggered = true;
         }
     }
 

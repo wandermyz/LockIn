@@ -1815,6 +1815,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5951716635241313018, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
+      propertyPath: NextScene
+      value: 06_HB
+      objectReference: {fileID: 0}
     - target: {fileID: 5951716635241313023, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: m_Name
       value: LevelLink

@@ -3,6 +3,7 @@ Shader "Sprites/White"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _FillColor ("Fill Color", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -39,6 +40,7 @@ Shader "Sprites/White"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            float4 _FillColor;
 
             v2f vert (appdata v)
             {
@@ -51,7 +53,7 @@ Shader "Sprites/White"
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
-                return float4(1, 1, 1, col.a > 0.5f ? 1.0f : 0.0f);
+                return float4(_FillColor.r, _FillColor.g, _FillColor.b, col.a > 0.5f ? 1.0f : 0.0f);
             }
             ENDCG
         }

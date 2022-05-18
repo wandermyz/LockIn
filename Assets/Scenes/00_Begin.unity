@@ -480,6 +480,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 482207483328309148, guid: 91b4e13f8dffaee459d629b0f088c0f7, type: 3}
   m_PrefabInstance: {fileID: 1865395795850150694}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &955408387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1641545408969554307, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
+  m_PrefabInstance: {fileID: 1641545409841618577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &983150467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1147,6 +1152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerController: {fileID: 104181988}
+  Enables:
+  - {fileID: 955408387}
 --- !u!61 &1418197798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1340,7 +1347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1641545408969554307, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1641545408969554311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
       propertyPath: m_RootOrder

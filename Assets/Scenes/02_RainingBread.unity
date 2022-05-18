@@ -742,6 +742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RequiredCount: 1
   Repeatable: 0
+  KeepAliveOnTrigger: 0
   Enables:
   - {fileID: 1558400190}
   Counter: {fileID: 0}
@@ -843,6 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RequiredCount: 1
   Repeatable: 0
+  KeepAliveOnTrigger: 0
   Enables:
   - {fileID: 444992211}
   Counter: {fileID: 0}
@@ -1457,6 +1459,10 @@ PrefabInstance:
     - target: {fileID: 5951716635241313017, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951716635241313018, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
+      propertyPath: NextScene
+      value: 03_Falling
       objectReference: {fileID: 0}
     - target: {fileID: 5951716635241313023, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: m_Name

@@ -422,6 +422,10 @@ PrefabInstance:
       value: EggWall4
       objectReference: {fileID: 0}
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -555,6 +559,10 @@ PrefabInstance:
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_Name
       value: EggWall3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_IsActive
@@ -811,6 +819,10 @@ PrefabInstance:
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_Name
       value: EggWall2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_IsActive
@@ -1344,6 +1356,10 @@ PrefabInstance:
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_Name
       value: EggWall1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3602324935380592853, guid: 2d8652b946b97be4a96f245a697ba340, type: 3}
       propertyPath: m_IsActive
