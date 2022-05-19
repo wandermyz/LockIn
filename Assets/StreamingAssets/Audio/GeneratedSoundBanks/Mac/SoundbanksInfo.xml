@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\LockIn\LockIn\LockIn_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\LockIn\LockIn\LockIn_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\LockIn\LockIn\LockIn_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1401148377">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2880737896" Language="SFX" Hash="1204222813">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
+			<ShortName>MainBank</ShortName>
+			<Path>MainBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1691765453" Name="Play_MainBGM" ObjectPath="\Events\Default Work Unit\Play_MainBGM" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="31443628" Language="SFX">
+							<ShortName>20220519-5.wav</ShortName>
+							<Path>SFX\20220519-5_D79FB2B7.wem</Path>
+						</File>
+						<File Id="86927287" Language="SFX">
+							<ShortName>20220514.wav</ShortName>
+							<Path>SFX\20220514_D79FB2B7.wem</Path>
+						</File>
+						<File Id="146331676" Language="SFX">
+							<ShortName>20220501-3 - 0003 - Instrument - Key.wav</ShortName>
+							<Path>SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem</Path>
+						</File>
+						<File Id="170253037" Language="SFX">
+							<ShortName>20220501-2-03-Heavy Shaker.wav</ShortName>
+							<Path>SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem</Path>
+						</File>
+						<File Id="190825172" Language="SFX">
+							<ShortName>20220426-03-Pots and Pans.wav</ShortName>
+							<Path>SFX\20220426-03-Pots and Pans_D79FB2B7.wem</Path>
+						</File>
+						<File Id="198198537" Language="SFX">
+							<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
+							<Path>SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem</Path>
+						</File>
+						<File Id="214348919" Language="SFX">
+							<ShortName>20220519-4.wav</ShortName>
+							<Path>SFX\20220519-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="234535089" Language="SFX">
+							<ShortName>20220519-c-03-Plastic Keys.wav</ShortName>
+							<Path>SFX\20220519-c-03-Plastic Keys_D79FB2B7.wem</Path>
+						</File>
+						<File Id="263621515" Language="SFX">
+							<ShortName>20220519-c-01-High FX Synth.wav</ShortName>
+							<Path>SFX\20220519-c-01-High FX Synth_D79FB2B7.wem</Path>
+						</File>
+						<File Id="281165068" Language="SFX">
+							<ShortName>20220519-c-04-Mini Marimba.wav</ShortName>
+							<Path>SFX\20220519-c-04-Mini Marimba_D79FB2B7.wem</Path>
+						</File>
+						<File Id="299745260" Language="SFX">
+							<ShortName>20220519-b.wav</ShortName>
+							<Path>SFX\20220519-b_D79FB2B7.wem</Path>
+						</File>
+						<File Id="336354772" Language="SFX">
+							<ShortName>20220501-3 - 0001 - Instrument - All is Lost.wav</ShortName>
+							<Path>SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem</Path>
+						</File>
+						<File Id="377478348" Language="SFX">
+							<ShortName>20220519-1.wav</ShortName>
+							<Path>SFX\20220519-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="421242796" Language="SFX">
+							<ShortName>20220519-6.wav</ShortName>
+							<Path>SFX\20220519-6_D79FB2B7.wem</Path>
+						</File>
+						<File Id="472352896" Language="SFX">
+							<ShortName>20220519-3.wav</ShortName>
+							<Path>SFX\20220519-3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="652708364" Language="SFX">
+							<ShortName>20220519-c-02-Latin Rumba Perc.wav</ShortName>
+							<Path>SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem</Path>
+						</File>
+						<File Id="709305570" Language="SFX">
+							<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
+							<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+						</File>
+						<File Id="794451495" Language="SFX">
+							<ShortName>20220519-9.wav</ShortName>
+							<Path>SFX\20220519-9_8978039A.wem</Path>
+						</File>
+						<File Id="826579402" Language="SFX">
+							<ShortName>20220501-2-01-Steinway Grand Piano.wav</ShortName>
+							<Path>SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem</Path>
+						</File>
+						<File Id="865444543" Language="SFX">
+							<ShortName>20220501-3 - 0002 - Instrument - Tremble.wav</ShortName>
+							<Path>SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem</Path>
+						</File>
+						<File Id="931469203" Language="SFX">
+							<ShortName>20220425.wav</ShortName>
+							<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+						</File>
+						<File Id="968842831" Language="SFX">
+							<ShortName>20220519-2.wav</ShortName>
+							<Path>SFX\20220519-2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="982253332" Language="SFX">
+							<ShortName>20220426-02-Odd Key.wav</ShortName>
+							<Path>SFX\20220426-02-Odd Key_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{31A346F0-E1D2-4FA7-82A2-C41BF9E419D0}">
+							<Media>
+								<File Id="931469203"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1B1E1FF0-9237-4126-AC0E-0B669B255384}">
+							<Media>
+								<File Id="190825172"/>
+								<File Id="709305570"/>
+								<File Id="982253332"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3B490DB1-0246-41CA-B06C-70825CF11F6E}">
+							<Media>
+								<File Id="146331676"/>
+								<File Id="336354772"/>
+								<File Id="865444543"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}">
+							<Media>
+								<File Id="170253037"/>
+								<File Id="198198537"/>
+								<File Id="826579402"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}">
+							<Media>
+								<File Id="86927287"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F42C8FDB-56CE-4E90-BAE9-A2D106E3794E}">
+							<Media>
+								<File Id="31443628"/>
+								<File Id="214348919"/>
+								<File Id="377478348"/>
+								<File Id="421242796"/>
+								<File Id="472352896"/>
+								<File Id="794451495"/>
+								<File Id="968842831"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{269645B8-4AFC-469D-80DA-94DDD1102551}">
+							<Media>
+								<File Id="234535089"/>
+								<File Id="263621515"/>
+								<File Id="281165068"/>
+								<File Id="652708364"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7F634051-3DD4-43F2-9B07-D36590CEDDAD}">
+							<Media>
+								<File Id="299745260"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1444949965" Name="Set_State_FallingDown" ObjectPath="\Events\Default Work Unit\Set_State_FallingDown" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingDown\Enabled"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2258315847" Name="Set_State_FallingLight" ObjectPath="\Events\Default Work Unit\Set_State_FallingLight" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingLight\Enabled"/>
+					</ActionSetState>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="31443628" Language="SFX">
+					<ShortName>20220519-5.wav</ShortName>
+					<Path>SFX\20220519-5_D79FB2B7.wem</Path>
+				</File>
+				<File Id="86927287" Language="SFX">
+					<ShortName>20220514.wav</ShortName>
+					<Path>SFX\20220514_D79FB2B7.wem</Path>
+				</File>
+				<File Id="146331676" Language="SFX">
+					<ShortName>20220501-3 - 0003 - Instrument - Key.wav</ShortName>
+					<Path>SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem</Path>
+				</File>
+				<File Id="170253037" Language="SFX">
+					<ShortName>20220501-2-03-Heavy Shaker.wav</ShortName>
+					<Path>SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem</Path>
+				</File>
+				<File Id="190825172" Language="SFX">
+					<ShortName>20220426-03-Pots and Pans.wav</ShortName>
+					<Path>SFX\20220426-03-Pots and Pans_D79FB2B7.wem</Path>
+				</File>
+				<File Id="198198537" Language="SFX">
+					<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
+					<Path>SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem</Path>
+				</File>
+				<File Id="214348919" Language="SFX">
+					<ShortName>20220519-4.wav</ShortName>
+					<Path>SFX\20220519-4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="234535089" Language="SFX">
+					<ShortName>20220519-c-03-Plastic Keys.wav</ShortName>
+					<Path>SFX\20220519-c-03-Plastic Keys_D79FB2B7.wem</Path>
+				</File>
+				<File Id="263621515" Language="SFX">
+					<ShortName>20220519-c-01-High FX Synth.wav</ShortName>
+					<Path>SFX\20220519-c-01-High FX Synth_D79FB2B7.wem</Path>
+				</File>
+				<File Id="281165068" Language="SFX">
+					<ShortName>20220519-c-04-Mini Marimba.wav</ShortName>
+					<Path>SFX\20220519-c-04-Mini Marimba_D79FB2B7.wem</Path>
+				</File>
+				<File Id="299745260" Language="SFX">
+					<ShortName>20220519-b.wav</ShortName>
+					<Path>SFX\20220519-b_D79FB2B7.wem</Path>
+				</File>
+				<File Id="336354772" Language="SFX">
+					<ShortName>20220501-3 - 0001 - Instrument - All is Lost.wav</ShortName>
+					<Path>SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem</Path>
+				</File>
+				<File Id="377478348" Language="SFX">
+					<ShortName>20220519-1.wav</ShortName>
+					<Path>SFX\20220519-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="421242796" Language="SFX">
+					<ShortName>20220519-6.wav</ShortName>
+					<Path>SFX\20220519-6_D79FB2B7.wem</Path>
+				</File>
+				<File Id="472352896" Language="SFX">
+					<ShortName>20220519-3.wav</ShortName>
+					<Path>SFX\20220519-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="652708364" Language="SFX">
+					<ShortName>20220519-c-02-Latin Rumba Perc.wav</ShortName>
+					<Path>SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem</Path>
+				</File>
+				<File Id="709305570" Language="SFX">
+					<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
+					<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+				</File>
+				<File Id="794451495" Language="SFX">
+					<ShortName>20220519-9.wav</ShortName>
+					<Path>SFX\20220519-9_8978039A.wem</Path>
+				</File>
+				<File Id="826579402" Language="SFX">
+					<ShortName>20220501-2-01-Steinway Grand Piano.wav</ShortName>
+					<Path>SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem</Path>
+				</File>
+				<File Id="865444543" Language="SFX">
+					<ShortName>20220501-3 - 0002 - Instrument - Tremble.wav</ShortName>
+					<Path>SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem</Path>
+				</File>
+				<File Id="931469203" Language="SFX">
+					<ShortName>20220425.wav</ShortName>
+					<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+				</File>
+				<File Id="968842831" Language="SFX">
+					<ShortName>20220519-2.wav</ShortName>
+					<Path>SFX\20220519-2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="982253332" Language="SFX">
+					<ShortName>20220426-02-Odd Key.wav</ShortName>
+					<Path>SFX\20220426-02-Odd Key_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="2411389338" Name="MyFootDistance" ObjectPath="\Game Parameters\Default Work Unit\MyFootDistance"/>
+				<GameParameter Id="3104708291" Name="MyEyeDistance" ObjectPath="\Game Parameters\Default Work Unit\MyEyeDistance"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1315568674" Name="LevelGroup" ObjectPath="\States\Default Work Unit\LevelGroup" GUID="{9CCC351A-9C0C-488C-B67F-34350A03DE2E}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\LevelGroup\None" GUID="{D6D1C914-55C1-4335-AA0D-51543B38BB84}"/>
+						<State Id="1241384302" Name="L1_Help" ObjectPath="\States\Default Work Unit\LevelGroup\L1_Help" GUID="{31A346F0-E1D2-4FA7-82A2-C41BF9E419D0}"/>
+						<State Id="3534658058" Name="L2_RainingBread" ObjectPath="\States\Default Work Unit\LevelGroup\L2_RainingBread" GUID="{1B1E1FF0-9237-4126-AC0E-0B669B255384}"/>
+						<State Id="2711863090" Name="L3_Falling" ObjectPath="\States\Default Work Unit\LevelGroup\L3_Falling" GUID="{3B490DB1-0246-41CA-B06C-70825CF11F6E}"/>
+						<State Id="2259867596" Name="L4_WeepingPotatoes" ObjectPath="\States\Default Work Unit\LevelGroup\L4_WeepingPotatoes" GUID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
+						<State Id="819628587" Name="L0_Begin" ObjectPath="\States\Default Work Unit\LevelGroup\L0_Begin" GUID="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}"/>
+						<State Id="1777991132" Name="L5_OldManRing" ObjectPath="\States\Default Work Unit\LevelGroup\L5_OldManRing" GUID="{7F634051-3DD4-43F2-9B07-D36590CEDDAD}"/>
+						<State Id="2347353944" Name="L6_HB" ObjectPath="\States\Default Work Unit\LevelGroup\L6_HB" GUID="{F42C8FDB-56CE-4E90-BAE9-A2D106E3794E}"/>
+						<State Id="2227088069" Name="L7_Myself" ObjectPath="\States\Default Work Unit\LevelGroup\L7_Myself" GUID="{269645B8-4AFC-469D-80DA-94DDD1102551}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingDown\Enabled" GUID="{BEF3B987-582D-4305-B9B6-7E324ED04D96}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+			<Triggers>
+				<Trigger Id="778577675" Name="FallingDownReady" ObjectPath="\Triggers\Default Work Unit\FallingDownReady"/>
+				<Trigger Id="1834139223" Name="FallingLightReady" ObjectPath="\Triggers\Default Work Unit\FallingLightReady"/>
+			</Triggers>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,66 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1444949965	Set_State_FallingDown			\Default Work Unit\Set_State_FallingDown	
+	1691765453	Play_MainBGM			\Default Work Unit\Play_MainBGM	
+	2258315847	Set_State_FallingLight			\Default Work Unit\Set_State_FallingLight	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	746704402	FallingLight			\Default Work Unit\FallingLight	
+	1315568674	LevelGroup			\Default Work Unit\LevelGroup	
+	3934905550	FallingDown			\Default Work Unit\FallingDown	
+
+State	ID	Name	State Group			Notes
+	748895195	None	FallingLight			
+	3248502869	Disabled	FallingLight			
+	4174102348	Enabled	FallingLight			
+	748895195	None	LevelGroup			
+	819628587	L0_Begin	LevelGroup			
+	1241384302	L1_Help	LevelGroup			
+	1777991132	L5_OldManRing	LevelGroup			
+	2227088069	L7_Myself	LevelGroup			
+	2259867596	L4_WeepingPotatoes	LevelGroup			
+	2347353944	L6_HB	LevelGroup			
+	2711863090	L3_Falling	LevelGroup			
+	3534658058	L2_RainingBread	LevelGroup			
+	748895195	None	FallingDown			
+	3248502869	Disabled	FallingDown			
+	4174102348	Enabled	FallingDown			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	63541407	Disabled	FallingDown	\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0001 - Instrument - All is Lost		
+	234586459	Enabled	FallingDown	\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0001 - Instrument - All is Lost		
+	657670943	Enabled	FallingLight	\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		
+	838385502	Disabled	FallingLight	\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2411389338	MyFootDistance			\Default Work Unit\MyFootDistance	
+	3104708291	MyEyeDistance			\Default Work Unit\MyEyeDistance	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	778577675	FallingDownReady			\Default Work Unit\FallingDownReady	
+	1834139223	FallingLightReady			\Default Work Unit\FallingLightReady	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	31443628	20220519-5	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-5_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-5\20220519-5		3670272
+	86927287	20220514	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220514_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220514_Begin\20220514\20220514		37824144
+	146331676	20220501-3 - 0003 - Instrument - Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		14887452
+	170253037	20220501-2-03-Heavy Shaker	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-03-Heavy Shaker		8301848
+	190825172	20220426-03-Pots and Pans	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220426-03-Pots and Pans_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-03-Pots and Pans		7969272
+	198198537	20220501-2-02-Steinway Grand Piano	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-02-Steinway Grand Piano		8301848
+	214348919	20220519-4	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-4\20220519-4		3932464
+	234535089	20220519-c-03-Plastic Keys	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-c-03-Plastic Keys_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_Myself\Myself\20220519-c-03-Plastic Keys		16777360
+	263621515	20220519-c-01-High FX Synth	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-c-01-High FX Synth_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_Myself\Myself\20220519-c-01-High FX Synth		53127672
+	281165068	20220519-c-04-Mini Marimba	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-c-04-Mini Marimba_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_Myself\Myself\20220519-c-04-Mini Marimba		16908432
+	299745260	20220519-b	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-b_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_OldManRing\20220519-b\20220519-b		32640144
+	336354772	20220501-3 - 0001 - Instrument - All is Lost	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0001 - Instrument - All is Lost		14887452
+	377478348	20220519-1	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-1\20220519-1		3932416
+	421242796	20220519-6	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-6\20220519-6		3670272
+	472352896	20220519-3	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-3\20220519-3		3932464
+	652708364	20220519-c-02-Latin Rumba Perc	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_Myself\Myself\20220519-c-02-Latin Rumba Perc		53127672
+	709305570	20220426-01-Antarctic Sun	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220426-01-Antarctic Sun_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-01-Antarctic Sun		7969272
+	794451495	20220519-9	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-9_8978039A.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-9\20220519-9		14942544
+	826579402	20220501-2-01-Steinway Grand Piano	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-01-Steinway Grand Piano		8301848
+	865444543	20220501-3 - 0002 - Instrument - Tremble	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0002 - Instrument - Tremble		14887452
+	931469203	20220425	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\Voices\English(US)\20220425_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220425_Help\20220425_Help\20220425		48505700
+	968842831	20220519-2	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-2\20220519-2		3932464
+	982253332	20220426-02-Odd Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220426-02-Odd Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-02-Odd Key		7969272
+
