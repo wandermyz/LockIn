@@ -42,5 +42,10 @@ public class DebugKeys : MonoBehaviour
         {
             SceneManager.LoadScene("SceneSelection");
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
