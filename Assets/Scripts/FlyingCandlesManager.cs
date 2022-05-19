@@ -98,6 +98,8 @@ public class FlyingCandlesManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
+        GetComponent<AkState>().data.SetValue();
+
         yield return new WaitForSeconds(StateInterval);
 
         State = FlyingCandlesState.LightingUp;
@@ -131,6 +133,8 @@ public class FlyingCandlesManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
+        BlowController.gameObject.SetActive(false);
+
         yield return new WaitForSeconds(StateInterval);
 
         State = FlyingCandlesState.Undimming;
@@ -154,10 +158,11 @@ public class FlyingCandlesManager : MonoBehaviour
 
     public void DebugSpawnAll()
     {
-        foreach (var c in PendingCandles)
+        for (int i = 0; i < PendingCandles.Count; ++i)
         {
+            var c = PendingCandles[i];
             c.Spawn(Vector3.zero);
-            SpawnedCandles.Add(c);
+            SpawnedCandles[c.ID] = c;
         }
 
         PendingCandles.Clear();

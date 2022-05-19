@@ -1300,6 +1300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1087778187}
   - component: {fileID: 1087778188}
+  - component: {fileID: 1087778189}
   m_Layer: 0
   m_Name: Candles
   m_TagString: Untagged
@@ -1375,6 +1376,30 @@ MonoBehaviour:
   LightingUpInterval: 0.1
   StateInterval: 1
   State: 0
+--- !u!114 &1087778189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087778186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ca0b58156ffdb44a84e0dc6c01685d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4a7fb81466ca4d84ca6754c0776d4b30, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1127150127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2032,7 +2057,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1356756657}
   - component: {fileID: 1356756656}
-  - component: {fileID: 1356756658}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2080,30 +2104,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1356756658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356756655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eac24eec94c579441beccac27303a2f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bbd1daf465300c842b2c6f0b03fcc650, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1001 &1374369036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3582,14 +3582,14 @@ PrefabInstance:
     - target: {fileID: 8033459867826037644, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 1f52d9f6e6cd44944b4c141e965bd0fd, type: 2}
+      objectReference: {fileID: 11400000, guid: 9ae49805aa6fdc441a7f4c676b07a845, type: 2}
     - target: {fileID: 8033459867826037645, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: m_Name
       value: BGMSwitcher
       objectReference: {fileID: 0}
     - target: {fileID: 8033459867826037645, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
