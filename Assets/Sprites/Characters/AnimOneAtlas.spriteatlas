@@ -65,12 +65,14 @@ SpriteAtlas:
     - {fileID: 2800000, guid: d145b02ffdb58884e9f17b51cbd35778, type: 3}
     - {fileID: 2800000, guid: baf087b80b3520c43bfe5085b2cb77b2, type: 3}
     - {fileID: 2800000, guid: c2a5e19a01414464b8a40f48865a78dc, type: 3}
+    - {fileID: 2800000, guid: 4a86eca172cf52440ad35ea2cea962e5, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 16783e11dff2b944e82266a8783b29ec, type: 3}
+  - {fileID: 21300000, guid: 4a86eca172cf52440ad35ea2cea962e5, type: 3}
   - {fileID: 21300000, guid: e8f0aa92c85e12245ba83ea9e582bb03, type: 3}
   - {fileID: 21300000, guid: adfdf8a24b8a6274eb08b3668f750c94, type: 3}
   - {fileID: 21300000, guid: c9de21c24f200534abfb8ee7d3138083, type: 3}
@@ -92,6 +94,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 69994f5fe701abc40a739aee0300e7c7, type: 3}
   m_PackedSpriteNamesToIndex:
   - AvatarAnim-17
+  - AvatarAngry
   - AvatarAnim-3
   - AvatarAnim-16
   - AvatarAnim-9

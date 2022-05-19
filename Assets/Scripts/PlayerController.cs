@@ -230,6 +230,10 @@ public class PlayerController : MonoBehaviour
                 animatorState = "Jump";
                 break;
 
+            case PlayerState.Kill:
+                animatorState = "Angry";
+                break;
+
             default:
                 animatorState = "Idle";
                 break;
