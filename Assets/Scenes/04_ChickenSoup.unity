@@ -1407,6 +1407,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f025b59ad46294ca6e8ec5723fa3a5, type: 3}
+--- !u!1001 &2093452615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3855417462435643977, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_Name
+      value: FadeInMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855417462435643979, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6e9fe302f6d01748a4186c922824a52, type: 3}
 --- !u!1 &2117203732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5340990897323984205, guid: 1b5b3250dacf85e4b94e355fb9ffbaa3, type: 3}
@@ -1840,6 +1897,18 @@ PrefabInstance:
     - target: {fileID: 5951716635241313018, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: NextScene
       value: 05_OldManRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951716635241313018, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
+      propertyPath: FadeOutColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951716635241313018, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
+      propertyPath: FadeOutColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951716635241313018, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
+      propertyPath: FadeOutColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5951716635241313023, guid: f6d66358d3908044aa40a4570e6f1f92, type: 3}
       propertyPath: m_Name

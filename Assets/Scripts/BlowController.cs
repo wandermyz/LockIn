@@ -36,6 +36,10 @@ public class BlowController : MonoBehaviour
         NewBreathLAxis = Input.GetAxis("BreathL");
         NewBreathRAxis = Input.GetAxis("BreathR");
 
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+        NewBreathRAxis = NewBreathLAxis;
+#endif
+
         float prevScale = CurrentScale;
         if (NegativeTarget < 0)
         {
@@ -76,6 +80,13 @@ public class BlowController : MonoBehaviour
         AirAmount = Mathf.Max(0, AirAmount);
 
         float outAmount = 0;
+
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+        if ( (BreathLAxis > 0.999f && leftVel < -BlowMinVelocity) || (BreathRAxis > 0.999f && rightVel < -BlowMinVelocity))
+        {
+            outAmount += AirAmount;
+        }
+#else
         if (BreathLAxis > 0.999f && leftVel < -BlowMinVelocity)
         {
             outAmount += AirAmount / 2.0f;
@@ -84,6 +95,8 @@ public class BlowController : MonoBehaviour
         {
             outAmount += AirAmount / 2.0f;
         }
+#endif
+
         if (outAmount > 0.01)
         {
             blow(outAmount);

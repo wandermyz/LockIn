@@ -12,7 +12,14 @@ public class DebugKeys : MonoBehaviour
             var levelLink = FindObjectOfType<LevelLink>(true);
             if (levelLink != null)
             {
-                SceneManager.LoadScene(levelLink.NextScene);
+                var parent = levelLink.transform.parent;
+                while (parent != null)
+                {
+                    parent.gameObject.SetActive(true);
+                    parent = parent.transform.parent;
+                }
+                levelLink.gameObject.SetActive(true);
+                levelLink.GoToNext();
             }
 
             var animationEvent = FindObjectOfType<SwitchLevelByAnimationEvent>();
