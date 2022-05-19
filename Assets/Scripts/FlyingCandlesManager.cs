@@ -21,6 +21,8 @@ public class FlyingCandlesManager : MonoBehaviour
     public Animator HBAnim;
     public BlowController BlowController;
 
+    public GameObject SecretPlatforms;
+
     [Range(0, 1)]
     public float DimmedAlpha = 0.8f;
 
@@ -154,6 +156,7 @@ public class FlyingCandlesManager : MonoBehaviour
         }
 
         State = FlyingCandlesState.Done;
+        SecretPlatforms.SetActive(true);
     }
 
     public void DebugSpawnAll()
