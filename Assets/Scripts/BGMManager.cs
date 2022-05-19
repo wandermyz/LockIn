@@ -14,6 +14,11 @@ public class BGMManager : Singleton<BGMManager>
     {
         AkSoundEngine.PostTrigger(trigger, gameObject);
     }
+    
+    public void SetRTPCValue(AK.Wwise.RTPC rtpc, float value)
+    {
+        rtpc.SetValue(gameObject, value);
+    }
 
     void Start()
     {

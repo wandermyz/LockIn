@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C47C3173-7878-459F-9CF9-852C6C63FD8B}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{C47C3173-7878-459F-9CF9-852C6C63FD8B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C47C3173-7878-459F-9CF9-852C6C63FD8B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="MyEyeDistance" ID="{0C107CCD-70E2-4CCF-8E17-77CCC81FC961}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MyFootDistance" ID="{41533D5B-8B24-4289-8E5C-EAB913AC445E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

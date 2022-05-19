@@ -64,6 +64,12 @@ namespace AK
 
     } // namespace STATES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MYEYEDISTANCE = 3104708291U;
+        static const AkUniqueID MYFOOTDISTANCE = 2411389338U;
+    } // namespace GAME_PARAMETERS
+
     namespace TRIGGERS
     {
         static const AkUniqueID FALLINGDOWNREADY = 778577675U;

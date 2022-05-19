@@ -10,7 +10,10 @@ State	ID	Name	State Group			Notes
 	748895195	None	LevelGroup			
 	819628587	L0_Begin	LevelGroup			
 	1241384302	L1_Help	LevelGroup			
+	1777991132	L5_OldManRing	LevelGroup			
+	2227088069	L7_Myself	LevelGroup			
 	2259867596	L4_WeepingPotatoes	LevelGroup			
+	2347353944	L6_HB	LevelGroup			
 	2711863090	L3_Falling	LevelGroup			
 	3534658058	L2_RainingBread	LevelGroup			
 	748895195	None	FallingDown			

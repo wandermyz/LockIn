@@ -31,6 +31,10 @@ Custom State	ID	Name	State Group	Owner		Notes
 	657670943	Enabled	FallingLight	\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		
 	838385502	Disabled	FallingLight	\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2411389338	MyFootDistance			\Default Work Unit\MyFootDistance	
+	3104708291	MyEyeDistance			\Default Work Unit\MyEyeDistance	
+
 Trigger	ID	Name			Wwise Object Path	Notes
 	778577675	FallingDownReady			\Default Work Unit\FallingDownReady	
 	1834139223	FallingLightReady			\Default Work Unit\FallingLightReady	

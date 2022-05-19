@@ -2654,6 +2654,41 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="20220519-c-01-High FX Synth" ID="{727CED38-3C23-419E-B314-A31BAE4F0335}" ShortID="517379838">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{472783E5-6595-43BB-9B85-5B907E2E46C5}" ShortID="110007091">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="MyEyeDistance" ID="{0C107CCD-70E2-4CCF-8E17-77CCC81FC961}" WorkUnitID="{C47C3173-7878-459F-9CF9-852C6C63FD8B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C2C658E6-5F7C-457B-8D45-831DA8A0E583}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.18728</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>15</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>
@@ -2763,6 +2798,41 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="20220519-c-02-Latin Rumba Perc" ID="{DAF439D1-FD53-42AD-AB33-D22FC62EBD18}" ShortID="437036623">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{BA05E71E-6715-4A94-B264-EB2419FB4A34}" ShortID="262856360">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="MyFootDistance" ID="{41533D5B-8B24-4289-8E5C-EAB913AC445E}" WorkUnitID="{C47C3173-7878-459F-9CF9-852C6C63FD8B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D3A58F06-CFC3-4031-B10A-8226986E4DED}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.36219</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>15</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87B1C9CB-EE8E-4254-8B7E-EF055C2896B3}"/>

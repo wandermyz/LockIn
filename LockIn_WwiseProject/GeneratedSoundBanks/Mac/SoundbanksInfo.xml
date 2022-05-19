@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="394892900">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1401148377">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="4147729318">
+		<SoundBank Id="2880737896" Language="SFX" Hash="1204222813">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
@@ -279,6 +279,10 @@
 					<Path>SFX\20220426-02-Odd Key_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="2411389338" Name="MyFootDistance" ObjectPath="\Game Parameters\Default Work Unit\MyFootDistance"/>
+				<GameParameter Id="3104708291" Name="MyEyeDistance" ObjectPath="\Game Parameters\Default Work Unit\MyEyeDistance"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1315568674" Name="LevelGroup" ObjectPath="\States\Default Work Unit\LevelGroup" GUID="{9CCC351A-9C0C-488C-B67F-34350A03DE2E}">
 					<States>
