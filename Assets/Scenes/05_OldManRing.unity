@@ -850,7 +850,7 @@ PrefabInstance:
     - target: {fileID: 8033459867826037644, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 9ae49805aa6fdc441a7f4c676b07a845, type: 2}
+      objectReference: {fileID: 11400000, guid: b7cf122899e87844ca8b04370e92c144, type: 2}
     - target: {fileID: 8033459867826037645, guid: f0db9e5e13dc9e24f95254c12938fa6b, type: 3}
       propertyPath: m_Name
       value: BGMSwitcher

@@ -55,6 +55,9 @@ namespace AK
                 static const AkUniqueID L2_RAININGBREAD = 3534658058U;
                 static const AkUniqueID L3_FALLING = 2711863090U;
                 static const AkUniqueID L4_WEEPINGPOTATOES = 2259867596U;
+                static const AkUniqueID L5_OLDMANRING = 1777991132U;
+                static const AkUniqueID L6_HB = 2347353944U;
+                static const AkUniqueID L7_MYSELF = 2227088069U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace LEVELGROUP

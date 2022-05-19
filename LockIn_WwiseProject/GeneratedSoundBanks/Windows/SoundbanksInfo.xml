@@ -16,13 +16,17 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="718806724">
+		<SoundBank Id="2880737896" Language="SFX" Hash="3830716304">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1691765453" Name="Play_MainBGM" ObjectPath="\Events\Default Work Unit\Play_MainBGM" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="31443628" Language="SFX">
+							<ShortName>20220519-5.wav</ShortName>
+							<Path>SFX\20220519-5_D79FB2B7.wem</Path>
+						</File>
 						<File Id="86927287" Language="SFX">
 							<ShortName>20220514.wav</ShortName>
 							<Path>SFX\20220514_D79FB2B7.wem</Path>
@@ -43,13 +47,53 @@
 							<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
 							<Path>SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem</Path>
 						</File>
+						<File Id="214348919" Language="SFX">
+							<ShortName>20220519-4.wav</ShortName>
+							<Path>SFX\20220519-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="234535089" Language="SFX">
+							<ShortName>20220519-c-03-Plastic Keys.wav</ShortName>
+							<Path>SFX\20220519-c-03-Plastic Keys_D79FB2B7.wem</Path>
+						</File>
+						<File Id="263621515" Language="SFX">
+							<ShortName>20220519-c-01-High FX Synth.wav</ShortName>
+							<Path>SFX\20220519-c-01-High FX Synth_D79FB2B7.wem</Path>
+						</File>
+						<File Id="281165068" Language="SFX">
+							<ShortName>20220519-c-04-Mini Marimba.wav</ShortName>
+							<Path>SFX\20220519-c-04-Mini Marimba_D79FB2B7.wem</Path>
+						</File>
+						<File Id="299745260" Language="SFX">
+							<ShortName>20220519-b.wav</ShortName>
+							<Path>SFX\20220519-b_D79FB2B7.wem</Path>
+						</File>
 						<File Id="336354772" Language="SFX">
 							<ShortName>20220501-3 - 0001 - Instrument - All is Lost.wav</ShortName>
 							<Path>SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem</Path>
 						</File>
+						<File Id="377478348" Language="SFX">
+							<ShortName>20220519-1.wav</ShortName>
+							<Path>SFX\20220519-1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="421242796" Language="SFX">
+							<ShortName>20220519-6.wav</ShortName>
+							<Path>SFX\20220519-6_D79FB2B7.wem</Path>
+						</File>
+						<File Id="472352896" Language="SFX">
+							<ShortName>20220519-3.wav</ShortName>
+							<Path>SFX\20220519-3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="652708364" Language="SFX">
+							<ShortName>20220519-c-02-Latin Rumba Perc.wav</ShortName>
+							<Path>SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem</Path>
+						</File>
 						<File Id="709305570" Language="SFX">
 							<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
 							<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+						</File>
+						<File Id="794451495" Language="SFX">
+							<ShortName>20220519-9.wav</ShortName>
+							<Path>SFX\20220519-9_8978039A.wem</Path>
 						</File>
 						<File Id="826579402" Language="SFX">
 							<ShortName>20220501-2-01-Steinway Grand Piano.wav</ShortName>
@@ -62,6 +106,10 @@
 						<File Id="931469203" Language="SFX">
 							<ShortName>20220425.wav</ShortName>
 							<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+						</File>
+						<File Id="968842831" Language="SFX">
+							<ShortName>20220519-2.wav</ShortName>
+							<Path>SFX\20220519-2_D79FB2B7.wem</Path>
 						</File>
 						<File Id="982253332" Language="SFX">
 							<ShortName>20220426-02-Odd Key.wav</ShortName>
@@ -100,6 +148,30 @@
 								<File Id="86927287"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F42C8FDB-56CE-4E90-BAE9-A2D106E3794E}">
+							<Media>
+								<File Id="31443628"/>
+								<File Id="214348919"/>
+								<File Id="377478348"/>
+								<File Id="421242796"/>
+								<File Id="472352896"/>
+								<File Id="794451495"/>
+								<File Id="968842831"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{269645B8-4AFC-469D-80DA-94DDD1102551}">
+							<Media>
+								<File Id="234535089"/>
+								<File Id="263621515"/>
+								<File Id="281165068"/>
+								<File Id="652708364"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7F634051-3DD4-43F2-9B07-D36590CEDDAD}">
+							<Media>
+								<File Id="299745260"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 				<Event Id="1444949965" Name="Set_State_FallingDown" ObjectPath="\Events\Default Work Unit\Set_State_FallingDown" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
@@ -114,6 +186,10 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="31443628" Language="SFX">
+					<ShortName>20220519-5.wav</ShortName>
+					<Path>SFX\20220519-5_D79FB2B7.wem</Path>
+				</File>
 				<File Id="86927287" Language="SFX">
 					<ShortName>20220514.wav</ShortName>
 					<Path>SFX\20220514_D79FB2B7.wem</Path>
@@ -134,13 +210,53 @@
 					<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
 					<Path>SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem</Path>
 				</File>
+				<File Id="214348919" Language="SFX">
+					<ShortName>20220519-4.wav</ShortName>
+					<Path>SFX\20220519-4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="234535089" Language="SFX">
+					<ShortName>20220519-c-03-Plastic Keys.wav</ShortName>
+					<Path>SFX\20220519-c-03-Plastic Keys_D79FB2B7.wem</Path>
+				</File>
+				<File Id="263621515" Language="SFX">
+					<ShortName>20220519-c-01-High FX Synth.wav</ShortName>
+					<Path>SFX\20220519-c-01-High FX Synth_D79FB2B7.wem</Path>
+				</File>
+				<File Id="281165068" Language="SFX">
+					<ShortName>20220519-c-04-Mini Marimba.wav</ShortName>
+					<Path>SFX\20220519-c-04-Mini Marimba_D79FB2B7.wem</Path>
+				</File>
+				<File Id="299745260" Language="SFX">
+					<ShortName>20220519-b.wav</ShortName>
+					<Path>SFX\20220519-b_D79FB2B7.wem</Path>
+				</File>
 				<File Id="336354772" Language="SFX">
 					<ShortName>20220501-3 - 0001 - Instrument - All is Lost.wav</ShortName>
 					<Path>SFX\20220501-3 - 0001 - Instrument - All is Lost_D79FB2B7.wem</Path>
 				</File>
+				<File Id="377478348" Language="SFX">
+					<ShortName>20220519-1.wav</ShortName>
+					<Path>SFX\20220519-1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="421242796" Language="SFX">
+					<ShortName>20220519-6.wav</ShortName>
+					<Path>SFX\20220519-6_D79FB2B7.wem</Path>
+				</File>
+				<File Id="472352896" Language="SFX">
+					<ShortName>20220519-3.wav</ShortName>
+					<Path>SFX\20220519-3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="652708364" Language="SFX">
+					<ShortName>20220519-c-02-Latin Rumba Perc.wav</ShortName>
+					<Path>SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem</Path>
+				</File>
 				<File Id="709305570" Language="SFX">
 					<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
 					<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+				</File>
+				<File Id="794451495" Language="SFX">
+					<ShortName>20220519-9.wav</ShortName>
+					<Path>SFX\20220519-9_8978039A.wem</Path>
 				</File>
 				<File Id="826579402" Language="SFX">
 					<ShortName>20220501-2-01-Steinway Grand Piano.wav</ShortName>
@@ -153,6 +269,10 @@
 				<File Id="931469203" Language="SFX">
 					<ShortName>20220425.wav</ShortName>
 					<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+				</File>
+				<File Id="968842831" Language="SFX">
+					<ShortName>20220519-2.wav</ShortName>
+					<Path>SFX\20220519-2_D79FB2B7.wem</Path>
 				</File>
 				<File Id="982253332" Language="SFX">
 					<ShortName>20220426-02-Odd Key.wav</ShortName>
@@ -168,6 +288,9 @@
 						<State Id="2711863090" Name="L3_Falling" ObjectPath="\States\Default Work Unit\LevelGroup\L3_Falling" GUID="{3B490DB1-0246-41CA-B06C-70825CF11F6E}"/>
 						<State Id="2259867596" Name="L4_WeepingPotatoes" ObjectPath="\States\Default Work Unit\LevelGroup\L4_WeepingPotatoes" GUID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
 						<State Id="819628587" Name="L0_Begin" ObjectPath="\States\Default Work Unit\LevelGroup\L0_Begin" GUID="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}"/>
+						<State Id="1777991132" Name="L5_OldManRing" ObjectPath="\States\Default Work Unit\LevelGroup\L5_OldManRing" GUID="{7F634051-3DD4-43F2-9B07-D36590CEDDAD}"/>
+						<State Id="2347353944" Name="L6_HB" ObjectPath="\States\Default Work Unit\LevelGroup\L6_HB" GUID="{F42C8FDB-56CE-4E90-BAE9-A2D106E3794E}"/>
+						<State Id="2227088069" Name="L7_Myself" ObjectPath="\States\Default Work Unit\LevelGroup\L7_Myself" GUID="{269645B8-4AFC-469D-80DA-94DDD1102551}"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingDown\Enabled" GUID="{BEF3B987-582D-4305-B9B6-7E324ED04D96}">
