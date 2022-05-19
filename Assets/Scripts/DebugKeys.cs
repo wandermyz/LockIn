@@ -14,6 +14,12 @@ public class DebugKeys : MonoBehaviour
             {
                 SceneManager.LoadScene(levelLink.NextScene);
             }
+
+            var animationEvent = FindObjectOfType<SwitchLevelByAnimationEvent>();
+            if (animationEvent != null)
+            {
+                animationEvent.OnAnimationFinished();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -23,6 +29,11 @@ public class DebugKeys : MonoBehaviour
             {
                 m.DebugSpawnAll();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SceneManager.LoadScene("SceneSelection");
         }
     }
 }
