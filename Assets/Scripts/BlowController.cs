@@ -18,14 +18,17 @@ public class BlowController : MonoBehaviour
     public float BreathRAxis;
     public float NewBreathLAxis;
     public float NewBreathRAxis;
+    public float CurrentScale;
     public float PositiveTarget;
     public float NegativeTarget;
 
     private Transform holder;
+    private int blowTotal;
 
     void Start()
     {
         holder = transform.GetChild(0);
+        CurrentScale = 1.0f;
     }
 
     void Update()
@@ -33,22 +36,20 @@ public class BlowController : MonoBehaviour
         NewBreathLAxis = Input.GetAxis("BreathL");
         NewBreathRAxis = Input.GetAxis("BreathR");
 
-        float prevScale = holder.transform.localScale.y;
-        float scale;
+        float prevScale = CurrentScale;
         if (NegativeTarget < 0)
         {
-            scale = Mathf.Lerp(prevScale, NegativeTarget, NegativeLerpRatio * Time.deltaTime);
-            if (Mathf.Abs(scale - NegativeTarget) < 0.001f)
+            CurrentScale = Mathf.Lerp(prevScale, NegativeTarget, NegativeLerpRatio * Time.deltaTime);
+            if (Mathf.Abs(CurrentScale - NegativeTarget) < 0.001f)
             {
                 NegativeTarget = 0;
             }
         }
         else
         {
-            scale = Mathf.Lerp(prevScale, PositiveTarget, PositiveLerpRatio * Time.deltaTime);
+            CurrentScale = Mathf.Lerp(prevScale, PositiveTarget, PositiveLerpRatio * Time.deltaTime);
         }
-        holder.transform.localScale = new Vector3(1, scale, 1);
-
+        holder.transform.localScale = new Vector3(1, CurrentScale + 0.1f, 1);
     }
 
     void FixedUpdate()
@@ -85,7 +86,7 @@ public class BlowController : MonoBehaviour
         }
         if (outAmount > 0.01)
         {
-            Debug.Log("Air Out! " + outAmount);
+            blow(outAmount);
             NegativeTarget = -outAmount;
             AirAmount = 0;
         }
@@ -99,5 +100,38 @@ public class BlowController : MonoBehaviour
         BreathRAxis = NewBreathRAxis;
 
         PositiveTarget = AirAmount;
+
+        bool done = true;
+        foreach (var c in Candles)
+        {
+            if (c.Flame.activeSelf)
+            {
+                done = false;
+            }
+        }
+        IsDone = done;
+    }
+
+    private void blow(float amount)
+    {
+        blowTotal++;
+        foreach (var c in Candles)
+        {
+            float delay = Random.Range(0, 0.5f);
+            float randomRatio;
+            if (blowTotal < 2)
+            {
+                randomRatio = Random.Range(0.0f, 0.3f);
+            }
+            else if (blowTotal < 5)
+            {
+                randomRatio = Random.Range(0.0f, 1.0f);
+            }
+            else
+            {
+                randomRatio = 1.0f;
+            }
+            c.Blow(amount * randomRatio, delay);
+        }
     }
 }

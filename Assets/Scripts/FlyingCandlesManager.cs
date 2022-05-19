@@ -33,7 +33,7 @@ public class FlyingCandlesManager : MonoBehaviour
     public FlyingCandlesState State;
 
     private List<FlyingCandle> PendingCandles;
-    private List<FlyingCandle> SpawnedCandles = new List<FlyingCandle>();
+    private List<FlyingCandle> SpawnedCandles;
 
     public void SpawnOne(Vector3 position)
     {
@@ -50,7 +50,7 @@ public class FlyingCandlesManager : MonoBehaviour
         int i = Random.Range(0, PendingCandles.Count - 1);
         FlyingCandle c = PendingCandles[i];
         PendingCandles.RemoveAt(i);
-        SpawnedCandles.Add(c);
+        SpawnedCandles[c.ID] = c;
 
         c.Spawn(position);
 
@@ -63,7 +63,15 @@ public class FlyingCandlesManager : MonoBehaviour
     void Start()
     {
         var candles = GetComponentsInChildren<FlyingCandle>(true);
-        PendingCandles = new List<FlyingCandle>(candles);
+        PendingCandles = new List<FlyingCandle>();
+        SpawnedCandles = new List<FlyingCandle>();
+        for (int i = 0; i < candles.Length; ++i)
+        {
+            var c = candles[i];
+            c.ID = i;
+            PendingCandles.Add(c);
+            SpawnedCandles.Add(null);
+        }
     }
 
     void Update()

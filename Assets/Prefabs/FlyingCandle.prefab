@@ -183,5 +183,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 100
+  InitialFlameAngularVelocity: 300
+  FlameAngularSpringK: 10
+  FlameAngularSpringDrag: 0.8
+  FlamePutoffRotationThreshold: 20
   Arrived: 0
+  DebugBlow: 0
+  DebugFlameReset: 0
+  FlameRotation: 0
   Flame: {fileID: 0}

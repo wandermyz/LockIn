@@ -6,10 +6,19 @@ public class FlyingCandle : MonoBehaviour
 {
     public float Velocity;
 
+    public float InitialFlameAngularVelocity;
+    public float FlameAngularSpringK;
+    public float FlameAngularSpringDrag;
+    public float FlamePutoffRotationThreshold;
+    public GameObject Flame;
+    public int ID;
+
     [Header("Debug")]
     public bool Arrived;
-
-    public GameObject Flame;
+    public bool DebugBlow;
+    public bool DebugFlameReset;
+    public float FlameRotation;
+    public float FlameAngularVelocity;
 
     private Vector3 spawnedPosition;
     private Vector3 targetPosition;
@@ -31,9 +40,31 @@ public class FlyingCandle : MonoBehaviour
         Flame.SetActive(true);
     }
 
+    public void Blow(float amount, float delay)
+    {
+        StartCoroutine(doBlow(amount, delay));
+    }
+
     void Start()
     {
         Flame = transform.GetChild(0).gameObject;
+    }
+
+    void Update()
+    {
+        if (DebugBlow)
+        {
+            Blow(1.0f, 0);
+            DebugBlow = false;
+        }
+
+        if (DebugFlameReset)
+        {
+            FlameRotation = 0;
+            FlameAngularVelocity = 0;
+            Flame.transform.rotation = Quaternion.identity;
+            DebugFlameReset = false;
+        }
     }
 
     void FixedUpdate()
@@ -52,10 +83,27 @@ public class FlyingCandle : MonoBehaviour
                 transform.position = newPosition;
             }
         }
+
+        if (Flame.gameObject.activeSelf)
+        {
+            float angularForce = -FlameRotation * Mathf.Abs(FlameRotation) * FlameAngularSpringK - FlameAngularVelocity * FlameAngularSpringDrag;
+            FlameAngularVelocity += angularForce * Time.fixedDeltaTime; 
+            FlameRotation += FlameAngularVelocity * Time.fixedDeltaTime;
+            Flame.transform.localRotation = Quaternion.Euler(0, 0, FlameRotation);
+
+            if (Mathf.Abs(FlameRotation) > FlamePutoffRotationThreshold)
+            {
+                Flame.SetActive(false);
+            }
+        }
     }
 
-    void Update()
+    private IEnumerator doBlow(float amount, float delay)
     {
-        
+        if (delay > 0)
+        {
+            yield return new WaitForSeconds(delay);
+        }
+        FlameAngularVelocity += InitialFlameAngularVelocity * amount * amount;
     }
 }
