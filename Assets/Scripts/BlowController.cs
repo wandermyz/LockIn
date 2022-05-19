@@ -101,20 +101,28 @@ public class BlowController : MonoBehaviour
 
         PositiveTarget = AirAmount;
 
-        bool done = true;
-        foreach (var c in Candles)
+        if (Candles != null)
         {
-            if (c.Flame.activeSelf)
+            bool done = true;
+            foreach (var c in Candles)
             {
-                done = false;
+                if (c.Flame.activeSelf)
+                {
+                    done = false;
+                }
             }
+            IsDone = done;
         }
-        IsDone = done;
     }
 
     private void blow(float amount)
     {
         blowTotal++;
+        if (Candles == null)
+        {
+            return;
+        }
+
         foreach (var c in Candles)
         {
             float delay = Random.Range(0, 0.5f);
