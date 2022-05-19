@@ -11,6 +11,9 @@
 						<State Name="L3_Falling" ID="{3B490DB1-0246-41CA-B06C-70825CF11F6E}"/>
 						<State Name="L4_WeepingPotatoes" ID="{230F3ACD-F978-4BE5-B0A9-83AD60DD5EB3}"/>
 						<State Name="L0_Begin" ID="{E19F8325-4DC4-40F4-9C0E-4918EA72B976}"/>
+						<State Name="L5_OldManRing" ID="{7F634051-3DD4-43F2-9B07-D36590CEDDAD}"/>
+						<State Name="L6_HB" ID="{F42C8FDB-56CE-4E90-BAE9-A2D106E3794E}"/>
+						<State Name="L7_Myself" ID="{269645B8-4AFC-469D-80DA-94DDD1102551}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="FallingDown" ID="{2CA3ACAF-E62B-4537-88AF-1BB8EE1A9BF5}">
