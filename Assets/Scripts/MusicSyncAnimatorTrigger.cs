@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,24 +18,26 @@ public class MusicSyncAnimatorTrigger : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        BGMManager.Instance.BeatHit += OnBeatHit;
     }
 
-    void Update()
+    void OnDestroy()
     {
-        if (BGMManager.Instance.OnBeatThisFrame)
+        BGMManager.Instance.BeatHit -= OnBeatHit;
+    }
+
+    void OnBeatHit(object sender, EventArgs e)
+    {
+        beats++;
+
+        if (beats >= EveryNBeats)
         {
-            beats++;
+            beats = 0;
+        }
 
-            if (beats >= EveryNBeats)
-            {
-                beats = 0;
-            }
-
-            if (beats == 0)
-            {
-                animator.SetTrigger(TriggerName);
-            }
-
+        if (beats == 0)
+        {
+            animator.SetTrigger(TriggerName);
         }
     }
 }

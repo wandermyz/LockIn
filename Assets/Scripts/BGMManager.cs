@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,16 @@ using UnityEngine;
 [RequireComponent(typeof(AkAmbient))]
 public class BGMManager : Singleton<BGMManager>
 {
-    public bool OnBeatThisFrame {get; private set;}
-    public bool OnBarThisFrame {get; private set;}
-    public string CueThisFrame {get; private set;}
     private AkAmbient akAmbient;
+
+    public event EventHandler BeatHit;
+    public event EventHandler BarHit;
+    public event EventHandler<CueEventArgs> CueHit;
+
+    public class CueEventArgs : EventArgs
+    {
+        public string Marker { get; set; }
+    }
 
     public void PostTrigger(string trigger)
     {
@@ -22,33 +29,34 @@ public class BGMManager : Singleton<BGMManager>
 
     void Start()
     {
+        Debug.Log("BGM Manager started: " + gameObject.GetHashCode());
         akAmbient = GetComponent<AkAmbient>();
     }
     
-    void Update()
-    {
-
-    }
-
-    void LateUpdate()
-    {
-        OnBeatThisFrame = false;
-        OnBarThisFrame = false;
-        CueThisFrame = null;
-    }
-
     void OnBeat(AkEventCallbackMsg msg)
     {
-        OnBeatThisFrame = true;
+        if (BeatHit != null)
+        {
+            BeatHit(this, new EventArgs());
+        }
     }
 
     void OnBar(AkEventCallbackMsg msg)
     {
-        OnBarThisFrame = true;
+        if (BarHit != null)
+        {
+            BarHit(this, new EventArgs());
+        }
     }
 
     void OnCue(AkEventCallbackMsg msg)
     {
-        CueThisFrame = "todo";
+        var info = msg.info as AkMarkerCallbackInfo;
+        string marker = null;
+        if (info != null)
+        {
+            marker = info.strLabel;
+        }
+        CueHit(this, new CueEventArgs(){ Marker = marker });
     }
 }
