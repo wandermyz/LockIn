@@ -37,16 +37,16 @@ public class FlyingCandlesManager : MonoBehaviour
     private List<FlyingCandle> PendingCandles;
     private List<FlyingCandle> SpawnedCandles;
 
-    public void SpawnOne(Vector3 position)
+    public FlyingCandle SpawnOne(Vector3 position)
     {
         if (PendingCandles == null || PendingCandles.Count == 0)
         {
-            return;
+            return null;
         }
 
         if (!ActiveArea.OverlapPoint(position.ToVector2()))
         {
-            return;
+            return null;
         }
 
         int i = Random.Range(0, PendingCandles.Count - 1);
@@ -60,6 +60,8 @@ public class FlyingCandlesManager : MonoBehaviour
         {
             StartCoroutine(lightUp());
         }
+
+        return c;
     }
 
     void Start()

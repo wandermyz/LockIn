@@ -16,11 +16,59 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" Language="SFX" Hash="1204222813">
+		<SoundBank Id="2880737896" Language="SFX" Hash="2402756645">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2704342734" Name="Play_AirJump" ObjectPath="\Events\Default Work Unit\Play_AirJump" DurationType="OneShot" DurationMin="0.531033" DurationMax="0.946193">
+					<IncludedMemoryFiles>
+						<File Id="925200859" Language="SFX">
+							<ShortName>Cartoon Accent 14AirJump.wav</ShortName>
+							<Path>SFX\Cartoon Accent 14AirJump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3835522457" Name="Play_Angry" ObjectPath="\Events\Default Work Unit\Play_Angry" DurationType="OneShot" DurationMin="0.506061" DurationMax="0.901698">
+					<IncludedMemoryFiles>
+						<File Id="876010460" Language="SFX">
+							<ShortName>Jaw Harp FX 01 Angry.wav</ShortName>
+							<Path>SFX\Jaw Harp FX 01 Angry_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2007351433" Name="Play_Drop" ObjectPath="\Events\Default Work Unit\Play_Drop" DurationType="OneShot" DurationMin="4.829728" DurationMax="6.446913">
+					<IncludedMemoryFiles>
+						<File Id="193623850" Language="SFX">
+							<ShortName>Cartoon Accent 32 Drop.wav</ShortName>
+							<Path>SFX\Cartoon Accent 32 Drop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire" MaxAttenuation="100." DurationType="OneShot" DurationMin="59." DurationMax="59.">
+					<IncludedMemoryFiles>
+						<File Id="954744938" Language="SFX">
+							<ShortName>Fire.wav</ShortName>
+							<Path>SFX\Fire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" DurationType="OneShot" DurationMin="0.457897" DurationMax="0.513972">
+					<IncludedMemoryFiles>
+						<File Id="197810735" Language="SFX">
+							<ShortName>Cartoon Accent 17_1Jump.wav</ShortName>
+							<Path>SFX\Cartoon Accent 17_1Jump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4064908091" Name="Play_Lock" ObjectPath="\Events\Default Work Unit\Play_Lock" DurationType="OneShot" DurationMin="0.650771" DurationMax="0.650771">
+					<IncludedMemoryFiles>
+						<File Id="934077324" Language="SFX">
+							<ShortName>Lock.wav</ShortName>
+							<Path>SFX\Lock_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1691765453" Name="Play_MainBGM" ObjectPath="\Events\Default Work Unit\Play_MainBGM" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="31443628" Language="SFX">
@@ -174,6 +222,38 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2822502046" Name="Play_Paw" ObjectPath="\Events\Default Work Unit\Play_Paw" DurationType="OneShot" DurationMin="0.281899" DurationMax="0.316422">
+					<IncludedMemoryFiles>
+						<File Id="731781673" Language="SFX">
+							<ShortName>Swish 1 WhooshLight.wav</ShortName>
+							<Path>SFX\Swish 1 WhooshLight_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="145199813" Name="Play_PawCandle" ObjectPath="\Events\Default Work Unit\Play_PawCandle" DurationType="OneShot" DurationMin="0.165894" DurationMax="0.18621">
+					<IncludedMemoryFiles>
+						<File Id="20996044" Language="SFX">
+							<ShortName>Whoosh 06.1.wav</ShortName>
+							<Path>SFX\Whoosh 06.1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3897687481" Name="Play_PawEgg" ObjectPath="\Events\Default Work Unit\Play_PawEgg" DurationType="OneShot" DurationMin="0.373059" DurationMax="0.395243">
+					<IncludedMemoryFiles>
+						<File Id="499520512" Language="SFX">
+							<ShortName>Bottle Cork Egg.wav</ShortName>
+							<Path>SFX\Bottle Cork Egg_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2838936948" Name="Play_Rain" ObjectPath="\Events\Default Work Unit\Play_Rain" DurationType="OneShot" DurationMin="16." DurationMax="16.">
+					<IncludedMemoryFiles>
+						<File Id="82927525" Language="SFX">
+							<ShortName>Rain.wav</ShortName>
+							<Path>SFX\Rain_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1444949965" Name="Set_State_FallingDown" ObjectPath="\Events\Default Work Unit\Set_State_FallingDown" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
 						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\FallingDown\Enabled"/>
@@ -186,9 +266,17 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="20996044" Language="SFX">
+					<ShortName>Whoosh 06.1.wav</ShortName>
+					<Path>SFX\Whoosh 06.1_10C4C929.wem</Path>
+				</File>
 				<File Id="31443628" Language="SFX">
 					<ShortName>20220519-5.wav</ShortName>
 					<Path>SFX\20220519-5_D79FB2B7.wem</Path>
+				</File>
+				<File Id="82927525" Language="SFX">
+					<ShortName>Rain.wav</ShortName>
+					<Path>SFX\Rain_10C4C929.wem</Path>
 				</File>
 				<File Id="86927287" Language="SFX">
 					<ShortName>20220514.wav</ShortName>
@@ -205,6 +293,14 @@
 				<File Id="190825172" Language="SFX">
 					<ShortName>20220426-03-Pots and Pans.wav</ShortName>
 					<Path>SFX\20220426-03-Pots and Pans_D79FB2B7.wem</Path>
+				</File>
+				<File Id="193623850" Language="SFX">
+					<ShortName>Cartoon Accent 32 Drop.wav</ShortName>
+					<Path>SFX\Cartoon Accent 32 Drop_10C4C929.wem</Path>
+				</File>
+				<File Id="197810735" Language="SFX">
+					<ShortName>Cartoon Accent 17_1Jump.wav</ShortName>
+					<Path>SFX\Cartoon Accent 17_1Jump_10C4C929.wem</Path>
 				</File>
 				<File Id="198198537" Language="SFX">
 					<ShortName>20220501-2-02-Steinway Grand Piano.wav</ShortName>
@@ -246,6 +342,10 @@
 					<ShortName>20220519-3.wav</ShortName>
 					<Path>SFX\20220519-3_D79FB2B7.wem</Path>
 				</File>
+				<File Id="499520512" Language="SFX">
+					<ShortName>Bottle Cork Egg.wav</ShortName>
+					<Path>SFX\Bottle Cork Egg_10C4C929.wem</Path>
+				</File>
 				<File Id="652708364" Language="SFX">
 					<ShortName>20220519-c-02-Latin Rumba Perc.wav</ShortName>
 					<Path>SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem</Path>
@@ -253,6 +353,10 @@
 				<File Id="709305570" Language="SFX">
 					<ShortName>20220426-01-Antarctic Sun.wav</ShortName>
 					<Path>SFX\20220426-01-Antarctic Sun_D79FB2B7.wem</Path>
+				</File>
+				<File Id="731781673" Language="SFX">
+					<ShortName>Swish 1 WhooshLight.wav</ShortName>
+					<Path>SFX\Swish 1 WhooshLight_10C4C929.wem</Path>
 				</File>
 				<File Id="794451495" Language="SFX">
 					<ShortName>20220519-9.wav</ShortName>
@@ -266,9 +370,25 @@
 					<ShortName>20220501-3 - 0002 - Instrument - Tremble.wav</ShortName>
 					<Path>SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem</Path>
 				</File>
+				<File Id="876010460" Language="SFX">
+					<ShortName>Jaw Harp FX 01 Angry.wav</ShortName>
+					<Path>SFX\Jaw Harp FX 01 Angry_10C4C929.wem</Path>
+				</File>
+				<File Id="925200859" Language="SFX">
+					<ShortName>Cartoon Accent 14AirJump.wav</ShortName>
+					<Path>SFX\Cartoon Accent 14AirJump_10C4C929.wem</Path>
+				</File>
 				<File Id="931469203" Language="SFX">
 					<ShortName>20220425.wav</ShortName>
 					<Path>Voices\English(US)\20220425_D79FB2B7.wem</Path>
+				</File>
+				<File Id="934077324" Language="SFX">
+					<ShortName>Lock.wav</ShortName>
+					<Path>SFX\Lock_10C4C929.wem</Path>
+				</File>
+				<File Id="954744938" Language="SFX">
+					<ShortName>Fire.wav</ShortName>
+					<Path>SFX\Fire_10C4C929.wem</Path>
 				</File>
 				<File Id="968842831" Language="SFX">
 					<ShortName>20220519-2.wav</ShortName>

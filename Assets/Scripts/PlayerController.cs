@@ -22,6 +22,11 @@ public class PlayerController : MonoBehaviour
 
     public float DeathY;
     public float RespawnY;
+    
+    public AK.Wwise.Event JumpAkEvent;
+    public AK.Wwise.Event AirJumpAkEvent;
+    public AK.Wwise.Event DropAkEvent;
+    public AK.Wwise.Event AngryAkEvent;
 
     [Header("Public for Debug")]
     public PlayerState State = PlayerState.Idle;
@@ -42,6 +47,7 @@ public class PlayerController : MonoBehaviour
     private ContactPoint2D[] contactPointsBuffer = new ContactPoint2D[8];
 
     private Vector3 spawningPosition;
+    private bool dropped;
 
     public void Kill()
     {
@@ -72,8 +78,15 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Drop
+        if (transform.position.y < DeathY && DropAkEvent != null && !dropped)
+        {
+            dropped = true;
+            DropAkEvent.Post(gameObject);
+        }
+
         if (transform.position.y < RespawnY) 
         {
+            dropped = false;
             rigidbody2D.MovePosition(spawningPosition);
             rigidbody2D.rotation = 0;
             rigidbody2D.velocity = Vector2.zero;
@@ -130,9 +143,19 @@ public class PlayerController : MonoBehaviour
             {
                 rigidbody2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
                 setState(PlayerState.Jump);
+
+                if (JumpAkEvent != null)
+                {
+                    JumpAkEvent.Post(gameObject);
+                }
             }
             else if (AirJumpUsed < MaxAirJump)
             {
+                if (AirJumpAkEvent != null)
+                {
+                    AirJumpAkEvent.Post(gameObject);
+                }
+
                 AirJumpUsed += 1;
                 rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
                 rigidbody2D.AddForce(Vector2.up * AirJumpForce, ForceMode2D.Impulse);
@@ -254,6 +277,12 @@ public class PlayerController : MonoBehaviour
     private IEnumerator executeKill()
     {
         setState(PlayerState.Kill);
+
+        if (AngryAkEvent != null)
+        {
+            AngryAkEvent.Post(gameObject);
+        }
+
         collider2D.enabled = false;
         rigidbody2D.simulated = false;
 

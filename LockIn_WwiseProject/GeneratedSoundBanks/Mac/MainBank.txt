@@ -1,7 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
+	145199813	Play_PawCandle			\Default Work Unit\Play_PawCandle	
 	1444949965	Set_State_FallingDown			\Default Work Unit\Set_State_FallingDown	
 	1691765453	Play_MainBGM			\Default Work Unit\Play_MainBGM	
+	2007351433	Play_Drop			\Default Work Unit\Play_Drop	
 	2258315847	Set_State_FallingLight			\Default Work Unit\Set_State_FallingLight	
+	2704342734	Play_AirJump			\Default Work Unit\Play_AirJump	
+	2822502046	Play_Paw			\Default Work Unit\Play_Paw	
+	2838936948	Play_Rain			\Default Work Unit\Play_Rain	
+	3015324718	Play_Fire			\Default Work Unit\Play_Fire	
+	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
+	3835522457	Play_Angry			\Default Work Unit\Play_Angry	
+	3897687481	Play_PawEgg			\Default Work Unit\Play_PawEgg	
+	4064908091	Play_Lock			\Default Work Unit\Play_Lock	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	746704402	FallingLight			\Default Work Unit\FallingLight	
@@ -40,11 +50,15 @@ Trigger	ID	Name			Wwise Object Path	Notes
 	1834139223	FallingLightReady			\Default Work Unit\FallingLightReady	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	20996044	PawCandle	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Whoosh 06.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PawCandle		22194
 	31443628	20220519-5	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-5_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-5\20220519-5		3670272
+	82927525	Rain	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Rain_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		3072144
 	86927287	20220514	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220514_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220514_Begin\20220514\20220514		37824144
 	146331676	20220501-3 - 0003 - Instrument - Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-3 - 0003 - Instrument - Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0003 - Instrument - Key		14887452
 	170253037	20220501-2-03-Heavy Shaker	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-2-03-Heavy Shaker_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-03-Heavy Shaker		8301848
 	190825172	20220426-03-Pots and Pans	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220426-03-Pots and Pans_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-03-Pots and Pans		7969272
+	193623850	Drop	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Cartoon Accent 32 Drop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drop		426126
+	197810735	Jump	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Cartoon Accent 17_1Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump		85720
 	198198537	20220501-2-02-Steinway Grand Piano	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-2-02-Steinway Grand Piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-02-Steinway Grand Piano		8301848
 	214348919	20220519-4	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-4\20220519-4		3932464
 	234535089	20220519-c-03-Plastic Keys	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-c-03-Plastic Keys_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_Myself\Myself\20220519-c-03-Plastic Keys		16777360
@@ -55,12 +69,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	377478348	20220519-1	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-1\20220519-1		3932416
 	421242796	20220519-6	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-6_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-6\20220519-6		3670272
 	472352896	20220519-3	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-3\20220519-3		3932464
+	499520512	PawEgg	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Bottle Cork Egg_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PawEgg		34012
 	652708364	20220519-c-02-Latin Rumba Perc	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-c-02-Latin Rumba Perc_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_Myself\Myself\20220519-c-02-Latin Rumba Perc		53127672
 	709305570	20220426-01-Antarctic Sun	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220426-01-Antarctic Sun_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-01-Antarctic Sun		7969272
+	731781673	Paw	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Swish 1 WhooshLight_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Paw		52828
 	794451495	20220519-9	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-9_8978039A.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-9\20220519-9		14942544
 	826579402	20220501-2-01-Steinway Grand Piano	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-2-01-Steinway Grand Piano_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_WeepingPotatoes\20220501-2\20220501-2-01-Steinway Grand Piano		8301848
 	865444543	20220501-3 - 0002 - Instrument - Tremble	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220501-3 - 0002 - Instrument - Tremble_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220501_Falling\20220501-3\20220501-3 - 0002 - Instrument - Tremble		14887452
+	876010460	Angry	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Jaw Harp FX 01 Angry_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Angry		59724
+	925200859	AirJump	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Cartoon Accent 14AirJump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AirJump		125184
 	931469203	20220425	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\Voices\English(US)\20220425_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220425_Help\20220425_Help\20220425		48505700
+	934077324	Lock	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Lock_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lock		114940
+	954744938	Fire	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\Fire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire		10407744
 	968842831	20220519-2	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220519-2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220519_HB\20220519-2\20220519-2		3932464
 	982253332	20220426-02-Odd Key	D:\LockIn\LockIn\LockIn_WwiseProject\.cache\Mac\SFX\20220426-02-Odd Key_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainBGM\20220426_RainingBread\20220426\20220426-02-Odd Key		7969272
 

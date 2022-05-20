@@ -709,6 +709,22 @@ PrefabInstance:
       propertyPath: MaxRotationFixingFrames
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: DropAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: JumpAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: AngryAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: AirJumpAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 273272606719072421, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1622,6 +1638,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -144.923
       objectReference: {fileID: 0}
+    - target: {fileID: 7600146497219574311, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6efb90d65a9b32245a95c412f7b3b27e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 014ef0a0a718b4a428300973c2444200, type: 3}
 --- !u!1001 &1865395795850150694

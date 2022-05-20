@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FlyingCandle : MonoBehaviour
 {
+    public AK.Wwise.Event CandleAkEvent;
     public float Velocity;
-
     public float InitialFlameAngularVelocity;
     public float FlameAngularSpringK;
     public float FlameAngularSpringDrag;
@@ -48,6 +48,7 @@ public class FlyingCandle : MonoBehaviour
     void Start()
     {
         Flame = transform.GetChild(0).gameObject;
+        CandleAkEvent.Post(gameObject);
     }
 
     void Update()

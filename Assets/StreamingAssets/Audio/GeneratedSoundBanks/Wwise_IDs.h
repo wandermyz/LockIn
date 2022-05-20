@@ -13,7 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AIRJUMP = 2704342734U;
+        static const AkUniqueID PLAY_ANGRY = 3835522457U;
+        static const AkUniqueID PLAY_DROP = 2007351433U;
+        static const AkUniqueID PLAY_FIRE = 3015324718U;
+        static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_LOCK = 4064908091U;
         static const AkUniqueID PLAY_MAINBGM = 1691765453U;
+        static const AkUniqueID PLAY_PAW = 2822502046U;
+        static const AkUniqueID PLAY_PAWCANDLE = 145199813U;
+        static const AkUniqueID PLAY_PAWEGG = 3897687481U;
+        static const AkUniqueID PLAY_RAIN = 2838936948U;
         static const AkUniqueID SET_STATE_FALLINGDOWN = 1444949965U;
         static const AkUniqueID SET_STATE_FALLINGLIGHT = 2258315847U;
     } // namespace EVENTS

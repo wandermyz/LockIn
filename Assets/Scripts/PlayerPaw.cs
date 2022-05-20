@@ -19,6 +19,9 @@ public class PlayerPaw : MonoBehaviour
     public Vector2 ShootingLocalImpulse;
     public FlyingCandlesManager FlyingCandlesManager;
 
+    public AK.Wwise.Event PawAkEvent;
+    public AK.Wwise.Event ShootingAkEvent;
+
     [Header("Debug")]
     public PlayerPawState State;
 
@@ -106,9 +109,23 @@ public class PlayerPaw : MonoBehaviour
                 shootingBallRididbody.AddForce(impulse.ToVector2(), ForceMode2D.Impulse);
             }
 
+            FlyingCandle spawnedCandle = null;
             if (FlyingCandlesManager != null)
             {
-                FlyingCandlesManager.SpawnOne(transform.position);
+                spawnedCandle = FlyingCandlesManager.SpawnOne(transform.position);
+            }
+
+            if (FlyingCandlesManager)
+            {
+                // Played by candle
+            }
+            else if (Shooting && ShootingBall != null)
+            {
+                ShootingAkEvent.Post(gameObject);
+            }
+            else
+            {
+                PawAkEvent.Post(gameObject);
             }
         }
     }

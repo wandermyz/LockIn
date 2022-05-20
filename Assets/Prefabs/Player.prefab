@@ -108,6 +108,22 @@ MonoBehaviour:
   MaxFloorAngle: 45
   DeathY: -18
   RespawnY: -50
+  JumpAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 727e024cf29d2ed41b6c7fa82667efad, type: 2}
+  AirJumpAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2e0b794c5c47ce140a03706803d257ec, type: 2}
+  DropAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e9ee1c4905545b34a9452bb7c28b7a18, type: 2}
+  AngryAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 778475c6b9d3b794c94152d5af05e734, type: 2}
   State: 0
   HorizontalAxis: 0
   JumpRequested: 0
@@ -335,4 +351,13 @@ MonoBehaviour:
   Shooting: 0
   ShootingBall: {fileID: 7723908078776392142, guid: 18793800385e54249b8d71f26a7bf6c3, type: 3}
   ShootingLocalImpulse: {x: 170, y: 0}
+  FlyingCandlesManager: {fileID: 0}
+  PawAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2eb9f3bc7c360014a96c0fc472825638, type: 2}
+  ShootingAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f7c9b5e1c3b51714d9786282694b03d5, type: 2}
   State: 0

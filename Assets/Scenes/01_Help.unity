@@ -730,6 +730,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: DropAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: JumpAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: AngryAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 273272606719072418, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
+      propertyPath: AirJumpAkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 273272606719072431, guid: b89a6405fad36b14f8448689521c00e5, type: 3}
       propertyPath: m_Name
       value: Player

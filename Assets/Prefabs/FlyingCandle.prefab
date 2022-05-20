@@ -182,13 +182,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45f86a1b8a1d3dd4c832f417f589ac23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CandleAkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8856cb272502893458f1d0cec04529da, type: 2}
   Velocity: 100
   InitialFlameAngularVelocity: 300
   FlameAngularSpringK: 10
   FlameAngularSpringDrag: 0.8
   FlamePutoffRotationThreshold: 20
+  Flame: {fileID: 0}
+  ID: 0
   Arrived: 0
   DebugBlow: 0
   DebugFlameReset: 0
   FlameRotation: 0
-  Flame: {fileID: 0}
+  FlameAngularVelocity: 0
